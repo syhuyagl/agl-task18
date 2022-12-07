@@ -5,5 +5,45 @@ btn
 /*
 ------------------------------------------------------------*/
 .c-mainvisual {
-
+    position: relative;
+  .c-mainvisual__dots {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+  }
+  .c-mainvisual__dot {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+  .slick-dots {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    right: 1.5%;
+    top: 52%;
+    transform: translateY(-50%);
+	list-style-type: none;
+        li{
+            margin-bottom: 28px;
+        }
+		button {
+			display: block;
+			width: 1.7rem;
+			height: 1.7rem;
+			padding: 0;
+			border: none;
+			border-radius: 100%;
+			background-color: #000;
+			text-indent: -9999px;
+		}
+		li.slick-active button {
+			background-color: #48b7d0;
+		}
+}
 }

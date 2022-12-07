@@ -1,7 +1,12 @@
 <section class="c-mainvisual">
     <div class="c-mainvisual__slider">
-        <div class="c-mainvisual__slide">
-            <img src="./assets/img/mv1.jpg" alt="">
-        </div>
+        <% if (typeof mainvisual != 'undefined') { %>
+            <% mainvisual.slides && mainvisual.slides.forEach(slide => { %>
+                <div class="c-mainvisual__slide">
+                    <img src="<%= slide.src %>" alt="">
+                </div>
+            <% }) %>
+          <% } %>
     </div>  
+  
 </section>

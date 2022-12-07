@@ -64,5 +64,21 @@
         "class": "c-header__inquiry"
       }
     ]
+  },
+  "mainvisual":{
+    "slides":[
+      {
+        "src": "./assets/img/mv1.jpg"
+      },
+      {
+        "src": "./assets/img/mv2.jpg"
+      },
+      {
+        "src": "./assets/img/mv3.jpg"
+      },
+      {
+        "src": "./assets/img/mv4.jpg"
+      }
+    ]
   }
 }
