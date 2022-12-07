@@ -5,6 +5,11 @@ title
 
 /*
 ------------------------------------------------------------*/
-.c-title1 {
-	
+.c-business {
+    .c-business__heading {
+        @include font-size(24);
+        font-weight:600;
+        color: #333333;
+
+    }
 }
