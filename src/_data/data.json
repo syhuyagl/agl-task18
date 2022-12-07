@@ -1,0 +1,68 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "会社案内",
+        "url": "/",
+        "class": "c-header__item"
+      },
+      {
+        "title": "事業紹介",
+        "url": "/about.html",
+        "class": "c-header__item c-header__item2",
+        "links": [
+          {
+            "title": "防災・減災業務",
+            "url": "/nested/nested/"
+          },
+          {
+            "title": "ICT・BIM/CIM",
+            "url": "/nested/nested/"
+          },
+          {
+            "title": "測量・設計業務",
+            "url": "/nested/nested/"
+          },
+          {
+            "title": "調査業務",
+            "url": "/nested/nested/"
+          }
+        ]
+      },
+      {
+        "title": "実績紹介",
+        "url": "/about.html",
+        "class": "c-header__item c-header__item3"
+      },
+      {
+        "title": "技術資料",
+        "url": "/nested/",
+        "class": "c-header__item"
+      },
+      {
+        "title": "採用情報",
+        "url": "/nested/",
+        "class": "c-header__info",
+        "links": [
+          {
+            "title": "私たちの仕事",
+            "url": "/nested/nested/"
+          },
+          {
+            "title": "先輩社員の声",
+            "url": "/nested/nested/"
+          },
+          {
+            "title": "募集要項",
+            "url": "/nested/nested/"
+          }
+        ]
+      },
+      { 
+        "title": "お問い合わせ",
+        "url": "/nested/",
+        "class": "c-header__inquiry"
+      }
+    ]
+  }
+}

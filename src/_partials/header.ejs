@@ -1,0 +1,27 @@
+<header class="c-header">
+  <div class="c-header__wrapper">
+     <div class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></div>
+      <nav class="c-gnav">
+        <ul class="c-header__navitems">
+          <% if (typeof linklists != 'undefined') { %>
+            <% linklists.main && linklists.main.forEach(link => { %>
+              <li class="c-header__navitem">
+                <a <% if (link.class ) { %>class="<%= link.class %>"<% } %> href="<%= link.url %>"><%= link.title %></a>
+                <% if (link.links) { %>
+                  <ul class="c-header__subnav is-hover">
+                    <% link.links.forEach(child_link => { %>
+                      <li>
+                        <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
+                      </li>
+                    <% }) %>
+                  </ul>
+                <% } %>
+              </li>
+            <% }) %>
+          <% } %>
+        </ul>
+      
+    </nav>
+  </div>
+ 
+</header>

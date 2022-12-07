@@ -1,0 +1,64 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+  .c-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 1580px;
+    margin-left: auto;
+  }
+  .c-header__logo{
+    width: 395px;
+    margin-left: 20px;
+  }
+  .c-gnav {
+    li {
+      display: inline-block;
+    }
+  }
+  .c-header__subnav{
+    display: none;
+  }
+  .c-header__navitems{
+    display: flex;
+  }
+  .c-header__navitem{
+    font-size: 1.6rem;
+    color: #333333;
+    font-weight: 300;
+  }
+  .c-header__info{
+    padding: 31px 36px 29px;
+    background-color: #40a62a;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.7px;
+  }
+  .c-header__inquiry{
+    padding: 31px 20px 29px 19px;
+    background-color: #48b7d0;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.7px;
+  }
+  .c-header__item{
+    margin-left: 21px;
+  }
+  .c-header__item:last-child{
+    margin-right: 19px;
+    letter-spacing: 1px;
+  }
+  .c-header__item2{
+    letter-spacing: 1.6px;
+    margin-left: 19px;
+  }
+  .c-header__item3{
+    margin-left: 39px;
+  }
+}
+/* Main menu
+------------------------------------------------------------*/
