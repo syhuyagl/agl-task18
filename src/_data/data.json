@@ -119,25 +119,29 @@
         "title": "No title",
         "img": "./assets/img/actual-1.jpg",
         "des": "ICT・BIM/CIM",
-        "class": ""
+        "class": "",
+        "labelClass": ""
       },
       {
         "title": "十籠地すべり対策事業",
         "img": "./assets/img/actual-2.png",
         "des": "防災・減災業務",
-        "class": "c-actual__lowitem"
+        "class": "c-actual__lowitem",
+        "labelClass": "c-actual_labelred"
       },
       {
         "title": "水ヶ浦地区災害関連緊急地すべり対策事業",
         "img": "./assets/img/actual-3.png",
         "des": "防災・減災業務",
-        "class": ""
+        "class": "",
+        "labelClass": "c-actual_labelred"
       },
       {
         "title": "大切畑地区災害関連緊急地すべり対策事業",
         "img": "./assets/img/actual-4.png",
         "des": "防災・減災業務",
-        "class": "c-actual__lowitem"
+        "class": "c-actual__lowitem",
+        "labelClass": "c-actual_labelred"
       }
     ]
   }

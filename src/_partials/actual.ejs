@@ -11,15 +11,15 @@
     <div class="c-actual__items">
         <% if (typeof actual != 'undefined') { %>
             <% actual.items && actual.items.forEach(item => { %>
-                <div class="c-business__item">
-                    <div class="c-business__itembg">
+                <div  <% if (item.class ) { %>class="<%= item.class %> c-actual__item"<% } %>>
+                    <div class="c-actual__itembg">
                         <img src="<%= item.img %>" alt="<%= item.title %>">
+                        <p class="c-actual__itemdes"><%=item.des%></p>
                     </div>
-                    <div <% if (item.class ) { %>class="<%= item.class %> c-business__description"<% } %>>
+                    <div>
                         <div class="">
-                            <img src="<%= item.icon %>" alt="<%= item.title %>">
+                           <p class="c-actual__itemtitle"><%=item.title%></p>
                         </div>
-                        <p  <% if (item.class ) { %>class="<%= item.desClass %>"<% } %>><%= item.title %></p>
                     </div>
                 </div>
             <% }) %>
