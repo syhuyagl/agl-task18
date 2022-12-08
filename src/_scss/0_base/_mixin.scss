@@ -14,11 +14,14 @@
     font-size: 2.4rem;
     font-weight: 600;
     color: #333;
+    text-align: center;
+    letter-spacing: 2px;
 }
 @mixin font-sub {
     font-size: 1.4rem;
     font-weight: 300;
     color: #333;
+    text-align: center;
 }
 
 //============================================

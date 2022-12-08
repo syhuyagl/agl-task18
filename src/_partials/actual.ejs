@@ -1,0 +1,29 @@
+<section class="c-actual">
+  <div class="c-container c-actual__top">
+    <div class="c-logo">
+      <img src="./assets/img/section-logo.png" alt="実績紹介" >
+    </div>
+    <h2 class="c-actual__heading">実績紹介</h2>
+    <p class="c-actual__subheading">
+      『地域の人たちが安全に安心して暮らせるように、<br >
+      <span class="c-actual__subheadingline2">そして豊かに快適に暮らせるように』、そんな想いを込めて仕事をしています。</span>
+    </p>
+    <div class="c-actual__items">
+        <% if (typeof actual != 'undefined') { %>
+            <% actual.items && actual.items.forEach(item => { %>
+                <div class="c-business__item">
+                    <div class="c-business__itembg">
+                        <img src="<%= item.img %>" alt="<%= item.title %>">
+                    </div>
+                    <div <% if (item.class ) { %>class="<%= item.class %> c-business__description"<% } %>>
+                        <div class="">
+                            <img src="<%= item.icon %>" alt="<%= item.title %>">
+                        </div>
+                        <p  <% if (item.class ) { %>class="<%= item.desClass %>"<% } %>><%= item.title %></p>
+                    </div>
+                </div>
+            <% }) %>
+          <% } %>
+    </div>
+  </div>
+</section>

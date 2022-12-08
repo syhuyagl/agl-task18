@@ -4,3 +4,26 @@ icon
 
 /*
 ------------------------------------------------------------*/
+.c-actual {
+  padding-top: 26px;
+  .c-actual__top {
+    padding-top: 49px;
+    background-image: url("../../assets/img/background.jpg");
+  }
+  .c-actual__heading {
+    padding-top: 1px;
+    padding-top: 3px;
+    @include font-heading;
+  }
+  .c-actual__subheading {
+    @include font-sub;
+    max-width: 532px;
+    margin: 0 auto;
+    padding-top: 18px;
+    letter-spacing: 0.5px;
+    line-height: 2;
+  }
+  .c-actual__subheadingline2 {
+    letter-spacing: -0.2px;
+  }
+}

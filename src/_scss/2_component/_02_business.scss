@@ -2,14 +2,133 @@
 title
 ------------------------------------------------------------*/
 
-
 /*
 ------------------------------------------------------------*/
 .c-business {
-    .c-business__heading {
-        @include font-size(24);
-        font-weight:600;
-        color: #333333;
-
-    }
+  padding-top: 50px;
+  .c-business__heading {
+    padding-top: 1px;
+    padding-top: 3px;
+    @include font-heading;
+  }
+  .c-business__subheading {
+    @include font-sub;
+    max-width: 495px;
+    margin: 0 auto;
+    padding-top: 18px;
+    line-height: 1.85;
+  }
+  .c-business__items {
+    display: flex;
+    max-width: 1172px;
+    width: 100%;
+    margin: 39px auto 0;
+    justify-content: space-between;
+  }
+  .c-business__item {
+    position: relative;
+    width: 23%;
+  }
+  .c-business__description {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    max-width: 240px;
+    width: 90%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .c-business__tsunami{
+    background: #d05e48;
+    padding: 19px 0;
+    text-align: center;
+    bottom: 2.4%;
+  }
+  .c-business__drone{
+    background: #48b7d0;
+    padding: 20px 0 18px;
+    text-align: center;
+    bottom: 2.4%;
+  }
+  .c-business__camera{
+    background: #a68a2a;
+    padding: 19px 0;
+    text-align: center;
+    bottom: 2.4%;
+  }
+  .c-business__drill {
+    background: #40a62a;
+    padding: 19px 0;
+    text-align: center;
+    bottom: 2.4%;
+  }
+  .c-business__firstdes{
+    padding-top: 14px;
+    letter-spacing: 2px;
+  }
+  .c-business__secondes{
+    padding-top: 20px;
+    letter-spacing: 3px;
+  }
+  .c-business__thirddes{
+    padding-top: 11px;
+    letter-spacing: 2px;
+  }
+  .c-business__fourthdes{
+    letter-spacing: 4px;
+    padding-top: 14px;
+  }
+  .c-business__background {
+    background-image: url("../../assets/img/bg-forest.jpg");
+    width: 100%;
+    height: 462px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 101px;
+    position: relative;
+  }
+  .c-business__matricepro{
+    position: absolute;
+    top: -9.3%;
+    left: 2.3%;
+  }
+  .c-business__text{
+    position: absolute;
+    max-width: 557px;
+    right: 18.5%;
+    color: #fff;
+    top: 20%;
+  }
+  .c-business__title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    max-width: 409px;
+    letter-spacing: 1px;
+  }
+  .c-business__titlenote{
+    letter-spacing: 2px;
+  }
+  .c-business__content{
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    padding-top: 21px;
+    line-height: 1.99;
+  }
+  .c-business__note{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 23px;
+  }
+  .c-business__detail{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 24px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
 }

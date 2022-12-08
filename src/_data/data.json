@@ -80,5 +80,65 @@
         "src": "./assets/img/mv4.jpg"
       }
     ]
+  },
+  "survey":{
+    "items":[
+      {
+        "src": "./assets/img/background-1.jpg",
+        "icon":"./assets/img/tsunami.png",
+        "title": "防災・減災業務",
+        "class": "c-business__tsunami",
+        "desClass":"c-business__firstdes"
+      },
+      {
+        "src": "./assets/img/background-2.jpg",
+        "icon":"./assets/img/drone.png",
+        "title": "ICT・BIM/CIM",
+        "class": "c-business__drone",
+        "desClass":"c-business__secondes"
+      },
+      {
+        "src": "./assets/img/background-3.jpg",
+        "icon":"./assets/img/camera.png",
+        "title": "測量・設計業務",
+        "class": "c-business__camera",
+        "desClass":"c-business__thirddes"
+      },
+      {
+        "src": "./assets/img/background-4.jpg",
+        "icon":"./assets/img/drill.png",
+        "title": "調査業務",
+        "class": "c-business__drill",
+        "desClass":"c-business__fourthdes"
+      }
+    ]
+  },
+  "actual":{
+    "items":[
+      {
+        "title": "No title",
+        "img": "./assets/img/actual-1.jpg",
+        "des": "ICT・BIM/CIM",
+        "class": ""
+      },
+      {
+        "title": "十籠地すべり対策事業",
+        "img": "./assets/img/actual-2.png",
+        "des": "防災・減災業務",
+        "class": "c-actual__lowitem"
+      },
+      {
+        "title": "水ヶ浦地区災害関連緊急地すべり対策事業",
+        "img": "./assets/img/actual-3.png",
+        "des": "防災・減災業務",
+        "class": ""
+      },
+      {
+        "title": "大切畑地区災害関連緊急地すべり対策事業",
+        "img": "./assets/img/actual-4.png",
+        "des": "防災・減災業務",
+        "class": "c-actual__lowitem"
+      }
+    ]
   }
 }
