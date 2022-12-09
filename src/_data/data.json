@@ -146,26 +146,31 @@
     ]
   },
   "news":{
-    "item":[
+    "items":[
       {
         "date": "2018年11月22日",
-        "title":"先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。"
+        "title":"先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。",
+        "iconClass": ""
       },
       {
         "date": "2018年11月20日",
-        "title":"ホームページをリニューアルしました"
+        "title":"ホームページをリニューアルしました",
+        "iconClass": "c-news__iconothers"
       },
       {
         "date": "2018年07月04日",
-        "title":"綿田地区の復興を願って寄付をしました。"
+        "title":"綿田地区の復興を願って寄付をしました。",
+        "iconClass": "c-news__iconothers"
       },
       {
         "date": "2017年10月12日",
-        "title":"福岡支店が移転しました。"
+        "title":"福岡支店が移転しました。",
+        "iconClass": "c-news__iconothers"
       },
       {
         "date": "2017年09月01日",
-        "title":"ドローンレーザスキャナを導入しました"
+        "title":"ドローンレーザスキャナを導入しました",
+        "iconClass": "c-news__iconothers"
       }
     ]
   }

@@ -2,8 +2,20 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding: 20px;
-    background: #051a2b;
-    color: #fff;
-    text-align: center;
+  margin-top: -137px;
+  position: relative;
+  .c-footer__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .c-footer__left{
+    width: 35%;
+  }
+  .c-footer__right{
+    width: 35%;
+    text-align: right;
+  }
+  .c-footer__info {
+    width: 30%;
+  }
 }

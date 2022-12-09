@@ -41,19 +41,19 @@ title
     font-size: 1.8rem;
     font-weight: 600;
   }
-  .c-business__tsunami{
+  .c-business__tsunami {
     background: #d05e48;
     padding: 19px 0;
     text-align: center;
     bottom: 2.4%;
   }
-  .c-business__drone{
+  .c-business__drone {
     background: #48b7d0;
     padding: 20px 0 18px;
     text-align: center;
     bottom: 2.4%;
   }
-  .c-business__camera{
+  .c-business__camera {
     background: #a68a2a;
     padding: 19px 0;
     text-align: center;
@@ -65,66 +65,68 @@ title
     text-align: center;
     bottom: 2.4%;
   }
-  .c-business__firstdes{
+  .c-business__firstdes {
     padding-top: 14px;
     letter-spacing: 2px;
   }
-  .c-business__secondes{
+  .c-business__secondes {
     padding-top: 20px;
     letter-spacing: 3px;
   }
-  .c-business__thirddes{
+  .c-business__thirddes {
     padding-top: 11px;
     letter-spacing: 2px;
   }
-  .c-business__fourthdes{
+  .c-business__fourthdes {
     letter-spacing: 4px;
     padding-top: 14px;
   }
   .c-business__background {
-    background-image: url("../../assets/img/bg-forest.jpg");
+    background-image: url(../../assets/img/bg-forest.jpg);
     width: 100%;
     height: 462px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin-top: 101px;
     position: relative;
+    display: flex;
   }
-  .c-business__matricepro{
-    position: absolute;
-    top: -9.3%;
-    left: 2.3%;
+  .c-business__matricepro {
+    width: 60%;
+    margin-top: -43px;
+    margin-right: 0px;
+    padding-left: 43px;
   }
-  .c-business__text{
-    position: absolute;
+  .c-business__text {
+    width: 40%;
+    padding-top: 92px;
+    transform: translateX(-143px);
     max-width: 557px;
-    right: 18.5%;
     color: #fff;
-    top: 20%;
   }
-  .c-business__title{
+  .c-business__title {
     font-size: 2.4rem;
     font-weight: 600;
     max-width: 409px;
     letter-spacing: 1px;
   }
-  .c-business__titlenote{
+  .c-business__titlenote {
     letter-spacing: 2px;
   }
-  .c-business__content{
+  .c-business__content {
     font-size: 1.4rem;
     font-weight: 300;
     letter-spacing: 0.3px;
     padding-top: 21px;
     line-height: 1.99;
   }
-  .c-business__note{
+  .c-business__note {
     font-size: 1.2rem;
     font-weight: 300;
     margin-top: 23px;
   }
-  .c-business__detail{
+  .c-business__detail {
     text-align: center;
     font-weight: 600;
     padding-top: 24px;
