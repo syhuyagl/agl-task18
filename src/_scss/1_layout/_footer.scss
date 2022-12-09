@@ -5,9 +5,10 @@ footer
 @include font-face(KozGoPro, "./assets/fonts/KozGoPro", normal, normal);
 
 .c-footer {
-  margin-top: -137px;
-  position: relative;
-  color: #333333;
+    position: absolute;
+    color: #333333;
+    width: 100%;
+    bottom: -10.85%;
   .c-footer__container {
     display: flex;
     justify-content: space-between;
