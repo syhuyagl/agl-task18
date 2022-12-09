@@ -4,3 +4,30 @@ form
 
 /*
 ------------------------------------------------------------*/
+.c-news {
+  padding-top: 50px;
+  .c-news__heading {
+    padding-top: 1px;
+    padding-top: 3px;
+    @include font-heading;
+  }
+  .c-news__items {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-news__date {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #48b7d0;
+  }
+  .c-news__title {
+    color: #333333;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .c-news__icon {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #48b7d0;
+  }
+}

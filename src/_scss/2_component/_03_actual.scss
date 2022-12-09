@@ -7,8 +7,10 @@ icon
 .c-actual {
   padding-top: 26px;
   .c-actual__top {
+    padding-bottom: 30px;
     padding-top: 49px;
     background-image: url("../../assets/img/background.jpg");
+    background-position: center;
   }
   .c-actual__heading {
     padding-top: 1px;
@@ -26,24 +28,104 @@ icon
   .c-actual__subheadingline2 {
     letter-spacing: -0.2px;
   }
-  .c-actual__items{
+  .c-actual__items {
     display: flex;
     max-width: 1170px;
     margin: 35px auto 0;
     justify-content: space-between;
   }
-  .c-actual__item{
+  .c-actual__item {
     width: 23%;
   }
-  .c-actual__itembg{
+  .c-actual__itembg {
     position: relative;
   }
-  .c-actual__itemdes{
+  .c-actual__itemdes {
     position: absolute;
     left: 0;
     bottom: 0;
+    background: #48b7d0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 3px 8px 3px 6px;
+    letter-spacing: 0.2px;
   }
-  .c-actual__lowitem{
+  .c-actual__lowitem {
     margin-top: 15px;
+  }
+  .c-actual__desred {
+    background: #d05e48;
+  }
+  .c-actual__title {
+    min-height: 95px;
+    background: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 13px;
+    padding-top: 12px;
+    letter-spacing: 1.2px;
+    position: relative;
+    &::after {
+      content: ">";
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+    }
+  }
+  .c-actual__detail {
+    text-align: center;
+    font-weight: 600;
+    padding-top: 24px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-top: 3px;
+    margin-bottom: 26px;
+  }
+  .c-actual__banner {
+    padding-top: 49px;
+    background: #f5f5f5;
+  }
+  .c-actual__banneritems {
+    display: flex;
+  }
+  .c-actual__banneritem {
+    position: relative;
+  }
+  .c-actual__bannertext {
+    position: absolute;
+    color: #fff;
+    max-width: 432px;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+  }
+  .c-actual__bannertitle {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+  .c-actual__bannercontent {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 6px 0 1px;
+    letter-spacing: 1px;
+    line-height: 2.1;
+  }
+  .c-actual__bannericon{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: inline-block;
+    transform: translateY(-3px);
+  }
+  .c-actual__bannercontent2{
+    letter-spacing: 1.3px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 6px 0 1px;
+    line-height: 2.1;
+  }
+  .c-actual__bannertext2{
+    left: 20.4%;
   }
 }

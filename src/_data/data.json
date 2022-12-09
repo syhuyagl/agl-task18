@@ -127,21 +127,45 @@
         "img": "./assets/img/actual-2.png",
         "des": "防災・減災業務",
         "class": "c-actual__lowitem",
-        "labelClass": "c-actual_labelred"
+        "labelClass": "c-actual__desred"
       },
       {
         "title": "水ヶ浦地区災害関連緊急地すべり対策事業",
         "img": "./assets/img/actual-3.png",
         "des": "防災・減災業務",
         "class": "",
-        "labelClass": "c-actual_labelred"
+        "labelClass": "c-actual__desred"
       },
       {
         "title": "大切畑地区災害関連緊急地すべり対策事業",
         "img": "./assets/img/actual-4.png",
         "des": "防災・減災業務",
         "class": "c-actual__lowitem",
-        "labelClass": "c-actual_labelred"
+        "labelClass": "c-actual__desred"
+      }
+    ]
+  },
+  "news":{
+    "item":[
+      {
+        "date": "2018年11月22日",
+        "title":"先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。"
+      },
+      {
+        "date": "2018年11月20日",
+        "title":"ホームページをリニューアルしました"
+      },
+      {
+        "date": "2018年07月04日",
+        "title":"綿田地区の復興を願って寄付をしました。"
+      },
+      {
+        "date": "2017年10月12日",
+        "title":"福岡支店が移転しました。"
+      },
+      {
+        "date": "2017年09月01日",
+        "title":"ドローンレーザスキャナを導入しました"
       }
     ]
   }

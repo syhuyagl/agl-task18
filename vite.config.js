@@ -102,7 +102,7 @@ module.exports = defineConfig(({ mode }) => {
 			Linter({
 				errorOverlay: true,
 				htmlhint: {
-					files: ['src/**/*.{html,ejs}'],
+					files: ['src/**/*.{ejs}'],
 				},
 				stylelint: {
 					files: ['src/**/*.{vue,css,sass,less,styl,svelte}'],

@@ -11,19 +11,43 @@
     <div class="c-actual__items">
         <% if (typeof actual != 'undefined') { %>
             <% actual.items && actual.items.forEach(item => { %>
-                <div  <% if (item.class ) { %>class="<%= item.class %> c-actual__item"<% } %>>
+                <div class="<%= item.class %> c-actual__item">
                     <div class="c-actual__itembg">
                         <img src="<%= item.img %>" alt="<%= item.title %>">
-                        <p class="c-actual__itemdes"><%=item.des%></p>
+                        <p class="<%= item.labelClass %> c-actual__itemdes"><%=item.des%></p>
                     </div>
-                    <div>
-                        <div class="">
-                           <p class="c-actual__itemtitle"><%=item.title%></p>
-                        </div>
+                    <div class="c-actual__title">
+                        <p><%=item.title%></p>
                     </div>
                 </div>
             <% }) %>
           <% } %>
+    </div>
+  </div>
+  <div class="c-actual__detail">
+    <p>実績紹介一覧 ></p>
+  </div>
+  <div class="c-actual__banner">
+    <div class="c-actual__banneritems">
+        <div class="c-actual__banneritem">
+            <img src="./assets/img/actual-banner-1.jpg" alt="">
+            <div class="c-actual__bannertext">
+                <p class="c-actual__bannertitle">会社案内</p>
+                <p class="c-actual__bannercontent">これまでの防災技術と新分野のICTなどを拡充し、<br>
+                地元地域に密着した総合建設コンサルタントを目指します。</p>
+                <span class="c-actual__bannericon">></span>
+            </div>
+        </div>
+        <div class="c-actual__banneritem">
+            <img src="./assets/img/actual-banner-2.jpg" alt="">
+            <div class="c-actual__bannertext c-actual__bannertext2">
+              <p class="c-actual__bannertitle">採用情報</p>
+              <p class="c-actual__bannercontent2">私たちと共に専門知識や技術を高めながら<br>
+                地域の未来を守る人材を募集しています。 
+               </p>
+              <span class="c-actual__bannericon"> ></span>
+          </div>
+        </div>
     </div>
   </div>
 </section>
