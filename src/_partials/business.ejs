@@ -13,7 +13,7 @@
         <div class="c-business__items">
             <% if (typeof survey != 'undefined') { %>
                 <% survey.items && survey.items.forEach(item => { %>
-                    <div class="c-business__item">
+                    <div class="c-business__item <%= item.classHover %>">
                         <div class="c-business__itembg">
                             <img src="<%= item.src %>" alt="<%= item.title %>">
                         </div>

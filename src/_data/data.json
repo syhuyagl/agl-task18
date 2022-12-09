@@ -10,6 +10,7 @@
         "title": "事業紹介",
         "url": "/about.html",
         "class": "c-header__item c-header__item2",
+
         "links": [
           {
             "title": "防災・減災業務",
@@ -42,6 +43,7 @@
       {
         "title": "採用情報",
         "url": "/nested/",
+        "sub": "c-header__subnav2",
         "class": "c-header__info",
         "links": [
           {
@@ -95,7 +97,8 @@
         "icon":"./assets/img/drone.png",
         "title": "ICT・BIM/CIM",
         "class": "c-business__drone",
-        "desClass":"c-business__secondes"
+        "desClass":"c-business__secondes",
+        "classHover": "c-business__opposite"
       },
       {
         "src": "./assets/img/background-3.jpg",
@@ -109,7 +112,8 @@
         "icon":"./assets/img/drill.png",
         "title": "調査業務",
         "class": "c-business__drill",
-        "desClass":"c-business__fourthdes"
+        "desClass":"c-business__fourthdes",
+        "classHover": "c-business__opposite"
       }
     ]
   },

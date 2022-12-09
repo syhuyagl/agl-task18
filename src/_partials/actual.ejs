@@ -11,7 +11,7 @@
     <div class="c-actual__items">
         <% if (typeof actual != 'undefined') { %>
             <% actual.items && actual.items.forEach(item => { %>
-                <div class="<%= item.class %> c-actual__item">
+                <a class="<%= item.class %> c-actual__item">
                     <div class="c-actual__itembg">
                         <img src="<%= item.img %>" alt="<%= item.title %>">
                         <p class="<%= item.labelClass %> c-actual__itemdes"><%=item.des%></p>
@@ -19,13 +19,13 @@
                     <div class="c-actual__title">
                         <p><%=item.title%></p>
                     </div>
-                </div>
+                  </a>
             <% }) %>
         <% } %>
     </div>
   </div>
   <div class="c-actual__detail">
-    <p>実績紹介一覧 ></p>
+    <a>実績紹介一覧 ></a>
   </div>
   <div class="c-actual__banner">
     <div class="c-actual__banneritems">

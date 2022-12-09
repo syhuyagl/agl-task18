@@ -4,6 +4,7 @@ body {
     font-family: $main-fonts;
     font-size: 1.4rem;
     line-height: 1.5;
+    position: relative;
     @include sp {
         min-width: 320px;
     }
@@ -16,6 +17,29 @@ main {
 
 .c-logo{
     text-align: center;
+}
+.c-top{
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 28px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.c-top__button1{
+    display: none;
+}
+.c-top__button2{
+    display: none;
+}
+.is-show{
+    display: block;
+}
+.is-hidden{
+    display: none;
 }
 //-------------------------------------------------------
 .l-container {

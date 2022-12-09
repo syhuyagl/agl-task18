@@ -49,10 +49,12 @@ footer
     width: 35%;
     @include background;
     background-image: url("./assets/img/footer-right.png");
+    background-position-x: right;
   }
   .c-footer__info {
     text-align: center;
-    width: 20%;
+    width: 100%;
+    max-width: 384px;
     margin-top: 10.2%;
   }
   .c-footer__logo {
