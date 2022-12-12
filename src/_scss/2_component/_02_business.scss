@@ -336,9 +336,11 @@ title
       }
     }
     @include tab {
-      width: 55%;
-      margin: 30px auto 0;
+      width: 90%;
+      max-width: 430px;
+      margin: 25px auto 0;
       padding-left: 0px;
+      transform: translateX(-8px);
     }
   }
   .c-business__text {
@@ -358,6 +360,9 @@ title
       max-width: 692px;
       transform: translate(0);
     }
+    @include sp {
+      padding: 14px 20px 0;
+    }
   }
   .c-business__title {
     font-size: 2.4rem;
@@ -367,9 +372,17 @@ title
     @include tab {
       max-width: 700px;
     }
+    @include sp {
+      font-size: 1.6rem;
+      letter-spacing: .5px;
+
+    }
   }
   .c-business__titlenote {
     letter-spacing: 2px;
+    @include sp {
+      letter-spacing: 1.3px;
+    }
   }
   .c-business__content {
     font-size: 1.4rem;
@@ -377,11 +390,22 @@ title
     letter-spacing: 0.3px;
     padding-top: 21px;
     line-height: 1.99;
+    @include sp {
+      font-size: 1.2rem;
+      letter-spacing: -0.2px;
+      padding-top: 21px;
+      line-height: 1.72;
+    }
   }
   .c-business__note {
     font-size: 1.2rem;
     font-weight: 300;
     margin-top: 23px;
+    @include sp {
+      margin-top: 8px;
+      letter-spacing: -0.4px;
+      line-height: 1.8;
+    }
   }
   .c-business__detail {
     text-align: center;
@@ -389,5 +413,9 @@ title
     padding-top: 24px;
     font-size: 1.8rem;
     letter-spacing: 2px;
+    @include sp {
+      font-size: 1.4rem;
+      padding-top: 21px;
+    }
   }
 }

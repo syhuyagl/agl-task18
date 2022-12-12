@@ -6,16 +6,29 @@ icon
 ------------------------------------------------------------*/
 .c-actual {
   padding-top: 26px;
+  @include sp {
+    padding-top: 23px;
+  }
   .c-actual__top {
     padding-bottom: 30px;
     padding-top: 49px;
     background-image: url("../../assets/img/background.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include sp{
+      padding-top: 38px;
+      background-image: url("../../assets/img/background-sp.jpg");
+      padding-bottom: 57px;
+    }
   }
   .c-actual__heading {
     padding-top: 1px;
     padding-top: 3px;
     @include font-heading;
+    @include sp {
+      padding-top: 6px;
+    }
   }
   .c-actual__subheading {
     @include font-sub;
@@ -24,6 +37,11 @@ icon
     padding-top: 18px;
     letter-spacing: 0.5px;
     line-height: 2;
+    @include sp {
+      padding: 13px 17px 0;
+      letter-spacing: 0.4px;
+      line-height: 1.75;
+    }
   }
   .c-actual__subheadingline2 {
     letter-spacing: -0.2px;
