@@ -27,9 +27,57 @@ form
   .c-news__item {
     display: flex;
     padding: 14px 0 13px;
+    @include tab {
+      flex-direction: column;
+    }
+    @include sp {
+      max-width: 337px;
+      position: relative;
+      margin: 12px auto 0;
+      width: 100%;
+      border-top: 1px solid #cccccc;
+      padding: 1px 0 3px;
+    }
   }
-  .c-news__item:nth-child(1){
+
+  .c-news__item:nth-child(2) {
+    @include sp {
+      margin: 6px auto 0;
+      line-height: 1.4;
+      letter-spacing: 0px;
+    }
+  }
+  .c-news__item:nth-child(3) {
+    @include sp {
+      margin: 5px auto 0;
+      line-height: 1.4;
+      letter-spacing: 0px;
+    }
+  }
+  .c-news__item:nth-child(4) {
+    @include sp {
+      margin: 5px auto 0;
+      line-height: 1.4;
+      letter-spacing: 0px;
+    }
+  }
+  .c-news__item:nth-child(5) {
+    @include sp {
+      margin: 5px auto 0;
+      line-height: 1.4;
+      letter-spacing: 0px;
+    }
+  }
+  .c-news__item:nth-child(1) {
     background: #f5f5f5;
+    @include sp {
+      background: none;
+      border-top: 1px solid #cccccc;
+    }
+  }
+  .c-news__item:last-child {
+    border-bottom: 1px solid #cccccc;
+    padding: 1px 0 8px;
   }
   .c-news__date {
     font-size: 1.4rem;
@@ -39,7 +87,12 @@ form
     width: 23%;
     padding-left: 11px;
     letter-spacing: 1px;
-    padding-top: -3px;
+    @include sp {
+      width: 100%;
+      letter-spacing: -0.5px;
+      padding-left: 0px;
+      padding-top: 9px;
+    }
   }
   .c-news__title {
     color: #333333;
@@ -50,6 +103,15 @@ form
     max-width: 442px;
     letter-spacing: 1.8px;
     line-height: 1.88;
+    @include sp {
+      font-size: 1.2rem;
+      max-width: 322px;
+      padding-left: 0px;
+      letter-spacing: 0.3px;
+      width: 89%;
+      padding-top: 6px;
+      line-height: 1.7;
+    }
   }
   .c-news__icon {
     font-size: 1.8rem;
@@ -58,11 +120,21 @@ form
     color: #48b7d0;
     display: inline-block;
     padding-top: 12px;
+    @include sp {
+      font-size: 1.5rem;
+      position: absolute;
+      right: -4px;
+      top: 22%;
+    }
   }
-  .c-news__iconothers{
+  .c-news__iconothers {
     padding-top: 0;
+    @include sp {
+      right: -4px;
+      top: 32%;
+    }
   }
-  .c-news__more{
+  .c-news__more {
     font-size: 1.8rem;
     font-weight: 600;
     color: #333333;
@@ -71,5 +143,10 @@ form
     margin-top: 30px;
     background: #d3d3d3;
     padding: 25px 0;
+    @include sp {
+      margin-top: 19px;
+      font-size: 1.4rem;
+      padding: 16px 0;
+    }
   }
 }
