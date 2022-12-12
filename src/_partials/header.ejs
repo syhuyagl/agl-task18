@@ -1,7 +1,7 @@
 <header class="c-header">
   <div class="c-header__wrapper">
      <div class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></div>
-      <nav class="c-gnav">
+      <nav class="c-gnav pc-only">
         <ul class="c-header__navitems">
           <% if (typeof linklists != 'undefined') { %>
             <% linklists.main && linklists.main.forEach(link => { %>
@@ -20,8 +20,83 @@
             <% }) %>
           <% } %>
         </ul>
-      
+        
     </nav>
+    <div class="c-header__menu tab-below">
+      <div class="c-header__open">
+        <img class="c-header__menuicon" src="./assets/img/nav.png" alt="">
+      </div>
+      <div class="c-header__close is-hidden">
+        <img class="c-header__menuicon" src="./assets/img/nav-close.png" alt="">
+      </div>
+    </div>
   </div>
- 
+  <div class="c-header__overlay tab-below">
+      <div class="c-header__menuoverlay">
+        <div class="c-header__menuinfo">
+          <p class="c-header__menuaddress">〒860-0833　熊本市中央区平成3丁目16番13号</p>
+          <p class="c-header__menutel"><span class="c-header__menutellabel">tel.</span>096-285-5177</p>
+          <span class="c-header__menufax">fax.096-285-5188</span>
+        </div>
+      </div>
+      <div class="c-header__menuitems">
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> お知らせ
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 会社案内
+        </a>
+        <a class="c-header__menuitem c-header__dropdown1">
+          <span class="c-header__plus">+</span> 事業紹介
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 実績紹介
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 技術資料
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 交通アクセス
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> プライバシーポリシー
+        </a>
+        <a class="c-header__menuitem c-header__dropdown2">
+          <span class="c-header__plus">+</span> 採用情報
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> お問い合わせ
+        </a>
+      </div>
+      <div class="c-header__droplist1 is-hidden">
+        <a class="c-header__back"><span class="c-header__arrow">&#60;</span> 戻る</a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 事業紹介（インデックス）
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 防災・減災業務
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> CT・BIM/CIM
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 測量・設計業務
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 調査業務
+        </a>
+      </div>
+      <div class="c-header__droplist2 is-hidden">
+        <a class="c-header__back"><span class="c-header__arrow">&#60;</span> 戻る</a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 私たちの仕事
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 先輩社員の声
+        </a>
+        <a class="c-header__menuitem">
+          <span class="c-header__arrow">></span> 募集要項
+        </a>
+      </div>
+  </div>
 </header>

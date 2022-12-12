@@ -92,9 +92,17 @@ icon
   }
   .c-actual__banneritems {
     display: flex;
+    @include tab {
+      flex-direction:  column;
+    }
   }
   .c-actual__banneritem {
     position: relative;
+    @include tab {
+      img{
+        width: 100%;
+      }
+    }
   }
   .c-actual__bannertext {
     position: absolute;

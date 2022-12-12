@@ -9,6 +9,9 @@ footer
     color: #333333;
     width: 100%;
     bottom: -10.85%;
+    @include medium {
+      bottom: -6.75%;
+    }
   .c-footer__container {
     display: flex;
     justify-content: space-between;
@@ -24,27 +27,46 @@ footer
     color: #fff;
     bottom: 9%;
     left: 20%;
+    @include medium {
+      position: absolute;
+      color: #fff;
+      bottom: 9%;
+      left: 5.7%;
+    }
   }
   .c-footer__leftlogo{
     font-family: 'Lora', serif;
   }
   .c-footer__logobig{
     font-size: 5rem;
+    @include medium {
+      font-size: 4rem;
+    }
   }
   .c-footer__logosmall{
     line-height: 1;
   }
   .c-footer__logosmalltext{
     font-size: 2rem;
+    @include medium {
+      font-size: 1.5rem;
+    }
   }
   .c-footer__logosmallbig{
     font-size: 5rem;
     line-height: 0.3;
+    @include medium{
+      font-size: 4rem;
+    }
   }
   .c-footer__logotext{
     padding-top: 5px;
     letter-spacing: 2.6px;
     margin-left: -53px;
+    @include medium {
+      letter-spacing: 0.3px;
+      margin-left: -10.8px;
+    }
   }
   .c-footer__right {
     width: 35%;
@@ -57,8 +79,17 @@ footer
     width: 100%;
     max-width: 384px;
     margin-top: 10.2%;
+    @include medium {
+      line-height: 1;
+    }
   }
   .c-footer__logo {
+    @include medium {
+      img{
+      width: 95px;
+    }
+    }
+    
   }
   .c-footer__company {
     padding-top: 10px;
@@ -83,11 +114,18 @@ footer
     font-family: YuMincho;
     font-weight: 400;
     font-size: 2.6rem;
+    @include medium {
+      font-size: 2.1rem;
+      padding-top: 10px;
+    }
   }
   .c-footer__phonenumber {
     font-size: 3.2rem;
     letter-spacing: -0.6px;
     font-weight: 600;
+    @include medium {
+      font-size: 2.7rem;
+    }
   }
   .c-footer__fax {
     font-family: YuMincho;
@@ -95,6 +133,9 @@ footer
     font-weight: 400;
     padding-top: 2px;
     letter-spacing: 1.5px;
+    @include medium {
+      padding-top: 5px;
+    }
   }
   .c-footer__link {
     display: flex;
@@ -120,5 +161,9 @@ footer
     padding-top: 28px;
     letter-spacing: 0.2px;
     padding-bottom: 58px;
+    @include medium {
+      padding-top: 8px;
+      padding-bottom: 10px;
+    }
   }
 }

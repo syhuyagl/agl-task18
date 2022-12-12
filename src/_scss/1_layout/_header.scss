@@ -10,8 +10,16 @@
     background: rgba(255, 255, 255, 0.9);
     max-width: 1580px;
     margin-left: auto;
+    overflow: hidden;
+   
+    width: 100%;
+    z-index: 100;
+    @include tab {
+      position: fixed;
+      background-color: #fff;
+    }
   }
-  .c-header__logo{
+  .c-header__logo {
     width: 395px;
     margin-left: 20px;
   }
@@ -20,7 +28,7 @@
       display: inline-block;
     }
   }
-  .c-header__subnav{
+  .c-header__subnav {
     position: absolute;
     display: none;
     flex-direction: column;
@@ -37,15 +45,15 @@
     padding-right: 15px;
     width: 280px;
   }
-  .c-header__subnav2{
+  .c-header__subnav2 {
     transform: translate(-50%, 116%);
     left: 49%;
   }
-  .c-header__subnavitem{
+  .c-header__subnavitem {
     padding: 15px 0px 16px;
     letter-spacing: 0.3px;
     border-bottom: 1px solid #b7b7b7;
-    &::after{
+    &::after {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       content: "\f105";
@@ -53,59 +61,125 @@
       right: 15px;
     }
   }
-  .c-header__subnavitem:last-child{
+  .c-header__subnavitem:last-child {
     border-bottom: none;
   }
-  .c-header__navitems{
+  .c-header__navitems {
     display: flex;
+    width: 710px;
   }
-  .c-header__navitem{
+  .c-header__navitem {
     font-size: 1.6rem;
     color: #333333;
     font-weight: 300;
     position: relative;
-    &:hover{
-      .c-header__subnav{
+    &:hover {
+      .c-header__subnav {
         display: flex;
       }
     }
   }
-  .c-header__info{
+  .c-header__info {
     padding: 31px 36px 29px;
     background-color: #40a62a;
     text-align: center;
     color: #fff;
     letter-spacing: 0.7px;
   }
-  .c-header__inquiry{
+  .c-header__inquiry {
     padding: 31px 20px 29px 19px;
     background-color: #48b7d0;
     text-align: center;
     color: #fff;
     letter-spacing: 0.7px;
   }
-  .c-header__item{
+  .c-header__item {
     margin-left: 21px;
-  
   }
-  .c-header__item:last-child{
+  .c-header__item:last-child {
     margin-right: 19px;
     letter-spacing: 1px;
   }
-  .c-header__item2{
+  .c-header__item2 {
     letter-spacing: 1.6px;
     margin-left: 19px;
     padding: 29px 0;
-    &:hover{
-      .c-header__subnav{
+    &:hover {
+      .c-header__subnav {
         display: flex;
       }
     }
   }
-  .c-header__item3{
+  .c-header__item3 {
     margin-left: 39px;
   }
- 
+  .c-header__menu {
+    padding-right: 13px;
+  }
+  .c-header__menuicon {
+    width: 38px;
+  }
+  .c-header__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0.5;
+    margin-top: 64px;
+  }
+  .c-header__menuinfo {
+    text-align: center;
+    padding-top: 31px;
+    border-bottom: 1px dashed #cccccc;
+  }
+  .c-header__menuaddress {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  .c-header__menutel {
+    font-size: 1.8rem;
+    font-family: "Lora", serif;
+    font-weight: 400;
+  }
+  .c-header__menutellabel {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Lora", serif;
+  }
+  .c-header__menufax {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Lora", serif;
+  }
+  .c-header__menuitems {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .c-header__menuitem {
+   padding: 25px 10px;
+   border-bottom: 1px dashed #cccccc;
+   display: block;
+  }
+  .c-header__arrow {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #44b8d1;
+  }
+  .c-header__plus {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #44b8d1;
+  }
+  .c-header__back{
+    text-align: center;
+    display: block;
+    color: #fff;
+    background: #333;
+  }
 }
 /* Main menu
 ------------------------------------------------------------*/

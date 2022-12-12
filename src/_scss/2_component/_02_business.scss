@@ -25,13 +25,17 @@ title
     width: 100%;
     margin: 39px auto 0;
     justify-content: space-between;
+    @include tab {
+      flex-wrap: wrap;
+      max-width: 760px;
+    }
   }
   .c-business__item {
     position: relative;
     width: 23%;
     cursor: pointer;
     overflow: hidden;
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       background: #fff;
@@ -41,7 +45,7 @@ title
       opacity: 0.7;
       transform: rotate(-31deg) translate(-106px, -60px);
     }
-    &::after{
+    &::after {
       content: "";
       position: absolute;
       background: #fff;
@@ -53,19 +57,37 @@ title
       transition: 0.4s;
       transform: rotate(-31deg) translate(106%, -60px);
     }
-    &:hover{
-      &::before{
+    &:hover {
+      &::before {
         transition: 0.4s;
         transform: rotate(-31deg) translate(-125%, -60px);
       }
-      &::after{
+      &::after {
         transition: 0.4s;
         transform: rotate(-31deg) translate(146%, -60px);
       }
     }
+    @include tab {
+      width: 38%;
+      ::before {
+        transform: rotate(-31deg) translate(-39%, -60px);
+      }
+      &::after {
+        transform: rotate(-31deg) translate(106%, -60px);
+      }
+      &:nth-child(odd) {
+        transform: translateX(60px);
+      }
+      &:nth-child(even) {
+        transform: translateX(-60px);
+      }
+      &:nth-last-child(-n + 2) {
+        margin-top: 48px;
+      }
+    }
   }
-  .c-business__opposite{
-    &::before{
+  .c-business__opposite {
+    &::before {
       content: "";
       position: absolute;
       background: #fff;
@@ -75,25 +97,33 @@ title
       top: 0;
       transform: rotate(31deg) translate(-106%, -60px);
     }
-    &::after{
+    &::after {
       content: "";
-    position: absolute;
-    background: #fff;
-    width: 100%;
-    height: 560px;
-    opacity: 0.7;
-    right: 0;
-    bottom: 0;
-    transform: rotate(31deg) translate(39%, -60px);
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 560px;
+      opacity: 0.7;
+      right: 0;
+      bottom: 0;
+      transform: rotate(31deg) translate(39%, -60px);
     }
-    &:hover{
-      &::before{
+    &:hover {
+      &::before {
         transition: 0.4s;
         transform: rotate(31deg) translate(-147%, -60px);
       }
-      &::after{
+      &::after {
         transition: 0.4s;
         transform: rotate(31deg) translate(125%, -60px);
+      }
+    }
+    @include tab {
+      &::before {
+        transform: rotate(31deg) translate(-106%, -60px);
+      }
+      &::after {
+        transform: rotate(31deg) translate(40%, -60px);
       }
     }
   }
@@ -160,12 +190,31 @@ title
     margin-top: 101px;
     position: relative;
     display: flex;
+    @include tab {
+      flex-direction: column;
+      height: 624px;
+    }
   }
   .c-business__matricepro {
     width: 60%;
     margin-top: -43px;
     margin-right: 0px;
     padding-left: 43px;
+    @include medium {
+      width: 60%;
+      margin-top: 30px;
+      margin-right: 0px;
+      img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    @include tab {
+      width: 55%;
+      margin: 30px auto 0;
+      padding-left: 0px;
+    }
   }
   .c-business__text {
     width: 40%;
@@ -173,12 +222,26 @@ title
     transform: translateX(-143px);
     max-width: 557px;
     color: #fff;
+    @include medium {
+      transform: translateX(-28px);
+      color: #fff;
+      padding-top: 27px;
+    }
+    @include tab {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 692px;
+      transform: translate(0);
+    }
   }
   .c-business__title {
     font-size: 2.4rem;
     font-weight: 600;
     max-width: 409px;
     letter-spacing: 1px;
+    @include tab {
+      max-width: 700px;
+    }
   }
   .c-business__titlenote {
     letter-spacing: 2px;
