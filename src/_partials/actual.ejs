@@ -13,7 +13,10 @@
             <% actual.items && actual.items.forEach(item => { %>
                 <a class="<%= item.class %> c-actual__item">
                     <div class="c-actual__itembg">
+                      <picture>
+                        <source media="(max-width: 767px )" srcset="<%= item.imgSp %>">
                         <img src="<%= item.img %>" alt="<%= item.title %>">
+                      </picture>
                         <p class="<%= item.labelClass %> c-actual__itemdes"><%=item.des%></p>
                     </div>
                     <div class="c-actual__title">
@@ -24,7 +27,7 @@
         <% } %>
      
     </div>
-    <div class="sp-only c-actual__arrows">
+    <div class="sp-only c-actual__slide">
       <div class="c-actual__arrowleft">
           <img src="./assets/img/arrow-left.png" alt="">
       </div>

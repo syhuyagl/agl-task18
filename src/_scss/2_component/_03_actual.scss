@@ -16,10 +16,11 @@ icon
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    @include sp{
+    @include sp {
       padding-top: 38px;
       background-image: url("../../assets/img/background-sp.jpg");
-      padding-bottom: 57px;
+      padding-bottom: 44px;
+      position: relative;
     }
   }
   .c-actual__heading {
@@ -52,10 +53,36 @@ icon
     padding: 0 15px;
     margin: 35px auto 0;
     justify-content: space-between;
+    @include sp {
+      margin: 29px auto 0;
+      padding: 0px 75px
+    }
+  }
+  .slick-slide{
+    @include sp {
+      width: 225px;
+    }
+  }
+  .slick-arrow{
+    @include sp {
+      width: 19px;
+    }
+  }
+  .c-actual__slide{
+    position: absolute;
+    width: 89.8%;
+    top: 63.8%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
   }
   .c-actual__item {
     cursor: pointer;
     width: 23%;
+    @include sp {
+      width: 65%;
+      margin: 0 auto;
+    }
   }
   .c-actual__itembg {
     position: relative;
@@ -70,9 +97,16 @@ icon
     font-weight: 300;
     padding: 3px 8px 3px 6px;
     letter-spacing: 0.2px;
+    @include sp {
+      height: 22px;
+      padding: 3px 16px 4px 10px;
+    }
   }
   .c-actual__lowitem {
     margin-top: 15px;
+    @include sp {
+      margin-top: 0;
+    }
   }
   .c-actual__desred {
     background: #d05e48;
@@ -93,6 +127,18 @@ icon
       right: 8px;
       bottom: 8px;
     }
+    @include sp {
+      font-size: 1.3rem;
+      padding-left: 14px;
+      padding-top: 8px;
+      min-height: 80px;
+      &::after {
+        content: ">";
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+      }
+    }
   }
   .c-actual__detail {
     text-align: center;
@@ -103,6 +149,13 @@ icon
     margin-top: 3px;
     margin-bottom: 26px;
     cursor: pointer;
+    @include sp {
+      font-size:  1.4rem;
+      padding-top: 17px;
+      letter-spacing: 1.4px;
+      margin-top: 0px;
+      margin-bottom: 15px;
+    }
   }
   .c-actual__banner {
     padding-top: 49px;
@@ -111,13 +164,13 @@ icon
   .c-actual__banneritems {
     display: flex;
     @include tab {
-      flex-direction:  column;
+      flex-direction: column;
     }
   }
   .c-actual__banneritem {
     position: relative;
     @include tab {
-      img{
+      img {
         width: 100%;
       }
     }
@@ -142,20 +195,20 @@ icon
     letter-spacing: 1px;
     line-height: 2.1;
   }
-  .c-actual__bannericon{
+  .c-actual__bannericon {
     font-size: 1.8rem;
     font-weight: 600;
     display: inline-block;
     transform: translateY(-3px);
   }
-  .c-actual__bannercontent2{
+  .c-actual__bannercontent2 {
     letter-spacing: 1.3px;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 6px 0 1px;
     line-height: 2.1;
   }
-  .c-actual__bannertext2{
+  .c-actual__bannertext2 {
     left: 20.4%;
   }
 }

@@ -36,30 +36,7 @@ $(document).ready(function () {
       },
     ],
   });
-  // function mobileOnlySlider() {
-  //   $(".c-actual__items").slick({
-  //     breakpoint: 727,
-  //     settings: {
-  //       arrows: true,
-  //       fade: true,
-  //       speed: 1100,
-  //       infinite: true,
-  //       autoplay: true,
-  //       cssEase: "linear",
-  //     },
-  //   });
-  // }
-  // $(window).resize(function (e) {
-  //   if (window.innerWidth < 768) {
-  //     if (!$(".slider").hasClass("slick-initialized")) {
-  //       mobileOnlySlider();
-  //     }
-  //   } else {
-  //     if ($(".slider").hasClass("slick-initialized")) {
-  //       $(".slider").slick("unslick");
-  //     }
-  //   }
-  // });
+ 
   $(".c-top").mouseenter(function () {
     $(".c-top__button1").removeClass("is-show");
     $(".c-top__button2").addClass("is-show");
