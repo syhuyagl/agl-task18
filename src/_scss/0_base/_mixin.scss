@@ -10,12 +10,35 @@
         clear: both;
     }
 }
+
+//============================================
+// breakpoint
+//============================================
+@mixin sp {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media only screen and (max-width: 1023px) {
+        @content;
+    }
+}
+@mixin medium {
+    @media only screen and (max-width: 1500px) {
+        @content;
+    }
+}
 @mixin font-heading {
     font-size: 2.4rem;
     font-weight: 600;
     color: #333;
     text-align: center;
     letter-spacing: 2px;
+    @include sp {
+        font-size: 1.8rem;
+    }
 }
 @mixin font-sub {
     font-size: 1.4rem;
@@ -56,24 +79,5 @@
         letter-spacing: normal;
     } @else {
         letter-spacing: #{$letter-spacing / $font-size}em;
-    }
-}
-//============================================
-// breakpoint
-//============================================
-@mixin sp {
-    @media only screen and (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin tab {
-    @media only screen and (max-width: 1023px) {
-        @content;
-    }
-}
-@mixin medium {
-    @media only screen and (max-width: 1500px) {
-        @content;
     }
 }

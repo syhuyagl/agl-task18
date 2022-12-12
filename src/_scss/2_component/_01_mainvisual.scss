@@ -46,7 +46,7 @@ btn
       background-color: #48b7d0;
     }
   }
-  .c-mainvisual__news{
+  .c-mainvisual__news {
     position: absolute;
     padding: 14px 10px 13px;
     bottom: 4.5%;
@@ -69,39 +69,86 @@ btn
       justify-content: space-between;
       max-width: 753px;
     }
+    @include sp {
+      position: static;
+      transform: translate(0);
+      flex-direction: column;
+      padding: 14px 10px 16px;
+    }
   }
-  .c-mainvisual__arrows{
+  .c-mainvisual__arrows {
     display: flex;
     margin-left: 4px;
     margin-top: -1px;
+    @include sp {
+      height: fit-content;
+      padding-left: 6px;
+      margin-top: 1px;
+    }
   }
-  .c-mainvisual__arrow{
+  .c-mainvisual__arrow {
     background-color: $blue;
     padding: 2px 6px;
     line-height: 1.1;
+    @include sp {
+      padding: 7px 10px;
+    }
   }
-  .c-mainvisual__arrow:last-child{
-    margin-left: 6px;
+  .c-mainvisual__arrow:last-child {
+    margin-left: 5px;
   }
-  .c-mainvisual__date{
+  .c-mainvisual__date {
     letter-spacing: 1.4px;
     margin-left: 14px;
+    @include sp {
+      letter-spacing: 1.1px;
+      line-height: 1.2;
+    }
   }
-  .c-mainvisual__content{
+  .c-mainvisual__content {
     margin-left: 19px;
     letter-spacing: 2px;
+    @include sp {
+      margin-left: 15px;
+      letter-spacing: 1.3px;
+      line-height: 1.6;
+      padding-top: 10px;
+    }
   }
-  .c-mainvisual__contentadjust{
+  .c-mainvisual__contentadjust {
     transform: translateX(-14px);
     letter-spacing: 0.3px;
     display: inline-block;
+    @include sp {
+      display: inline;
+    }
   }
-  .c-mainvisual__more{
+  .c-mainvisual__more {
     margin-left: 55px;
     font-size: 1.3rem;
     letter-spacing: 1px;
+    @include sp {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      width: 95%;
+      text-align: right;
+      padding-top: 11px;
+      margin-left: 0;
+      border-top: 1px solid #ccc;
+
+    }
   }
-  .c-mainviusal__morecontent{
+  .c-mainviusal__morecontent {
     padding-left: 23px;
+  }
+  .c-mainvisual__top {
+    display: flex;
+    padding-bottom: 12px;
+  }
+  .c-mainvisual__datewrap {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 }

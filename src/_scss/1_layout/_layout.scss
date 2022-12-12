@@ -14,9 +14,28 @@ main {
     // padding: 0px 0 100px;
 }
 
-
+.tab-below {
+    display: none;
+    @include tab {
+        display: block;
+    }
+}
+.sp-only{
+    display: none;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: block;
+    }
+}
 .c-logo{
     text-align: center;
+    @include sp {
+        img{
+            width: 35px;
+        }
+    }
 }
 .c-top{
     position: fixed;
@@ -43,16 +62,12 @@ main {
 }
 .pc-only{
     display: block;
-    @include tab{
-        display: none;
+
+    @include sp{
+        display: none !important;
     }
 }
-.tab-below {
-    display: none;
-    @include tab {
-        display: block;
-    }
-}
+
 //-------------------------------------------------------
 .l-container {
     margin: 0 auto;

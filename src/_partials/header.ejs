@@ -1,6 +1,12 @@
 <header class="c-header">
   <div class="c-header__wrapper">
-     <div class="c-header__logo"><a href="<%= BASE_URL %>index.html"><img src="/assets/img/logo.png" alt="Logo"></a></div>
+     <div class="c-header__logo"><a href="<%= BASE_URL %>index.html">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./assets/img/logo-sp.png">
+        <img src="./assets/img/logo.png" alt="Logo">
+     </picture>
+    </a>
+    </div>
       <nav class="c-gnav pc-only">
         <ul class="c-header__navitems">
           <% if (typeof linklists != 'undefined') { %>
@@ -31,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="c-header__overlay tab-below">
+  <div class="c-header__overlay tab-below is-hidden">
       <div class="c-header__menuoverlay">
         <div class="c-header__menuinfo">
           <p class="c-header__menuaddress">〒860-0833　熊本市中央区平成3丁目16番13号</p>
@@ -68,7 +74,7 @@
           <span class="c-header__arrow">></span> お問い合わせ
         </a>
       </div>
-      <div class="c-header__droplist1 is-hidden">
+      <div class="c-header__droplist1 c-header__droplist is-hidden">
         <a class="c-header__back"><span class="c-header__arrow">&#60;</span> 戻る</a>
         <a class="c-header__menuitem">
           <span class="c-header__arrow">></span> 事業紹介（インデックス）
@@ -86,7 +92,7 @@
           <span class="c-header__arrow">></span> 調査業務
         </a>
       </div>
-      <div class="c-header__droplist2 is-hidden">
+      <div class="c-header__droplist2 c-header__droplist  is-hidden">
         <a class="c-header__back"><span class="c-header__arrow">&#60;</span> 戻る</a>
         <a class="c-header__menuitem">
           <span class="c-header__arrow">></span> 私たちの仕事

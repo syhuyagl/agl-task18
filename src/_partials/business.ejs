@@ -15,10 +15,13 @@
                 <% survey.items && survey.items.forEach(item => { %>
                     <div class="c-business__item <%= item.classHover %>">
                         <div class="c-business__itembg">
+                          <picture>
+                            <source media="(max-width: 767px )" srcset="<%= item.srcSp %>">
                             <img src="<%= item.src %>" alt="<%= item.title %>">
+                          </picture>
                         </div>
                         <div <% if (item.class ) { %>class="<%= item.class %> c-business__description"<% } %>>
-                            <div class="">
+                            <div class="c-business__icon">
                                 <img src="<%= item.icon %>" alt="<%= item.title %>">
                             </div>
                             <p  <% if (item.class ) { %>class="<%= item.desClass %>"<% } %>><%= item.title %></p>
