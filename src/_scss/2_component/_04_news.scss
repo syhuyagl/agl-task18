@@ -6,10 +6,17 @@ form
 ------------------------------------------------------------*/
 .c-news {
   padding-top: 50px;
+  @include sp {
+    padding-top: 40px;
+  }
   .c-news__heading {
     padding-top: 1px;
     padding-top: 3px;
     @include font-heading;
+    @include sp {
+      letter-spacing: 0.7px;
+      padding-top: 4px;
+    }
   }
   .c-news__items {
     display: flex;

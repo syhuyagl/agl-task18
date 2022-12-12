@@ -160,6 +160,10 @@ icon
   .c-actual__banner {
     padding-top: 49px;
     background: #f5f5f5;
+    @include sp {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
   .c-actual__banneritems {
     display: flex;
@@ -175,6 +179,11 @@ icon
       }
     }
   }
+  .c-actual__banneritem:last-child{
+    @include sp {
+      margin-top: 5px;
+    }
+  }
   .c-actual__bannertext {
     position: absolute;
     color: #fff;
@@ -182,11 +191,20 @@ icon
     top: 50%;
     left: 20%;
     transform: translateY(-50%);
+    @include sp {
+      left: 5%;
+    }
   }
   .c-actual__bannertitle {
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: 4px;
+    @include sp {
+      font-size: 1.6rem;
+      padding-top: 4px;
+      padding-bottom: 3px;
+      letter-spacing: 2px;
+    }
   }
   .c-actual__bannercontent {
     font-size: 1.5rem;
@@ -194,12 +212,22 @@ icon
     padding: 6px 0 1px;
     letter-spacing: 1px;
     line-height: 2.1;
+    @include sp {
+      font-size: 1.2rem;
+      padding: 9px 0 1px;
+      line-height: 1.63;
+      letter-spacing: 0.8px;
+    }
   }
   .c-actual__bannericon {
     font-size: 1.8rem;
     font-weight: 600;
     display: inline-block;
     transform: translateY(-3px);
+    @include sp{
+    font-size: 1.5rem;
+    transform: translateY(-4px);
+    }
   }
   .c-actual__bannercontent2 {
     letter-spacing: 1.3px;
@@ -207,8 +235,17 @@ icon
     font-weight: 600;
     padding: 6px 0 1px;
     line-height: 2.1;
+    @include sp{
+      font-size: 1.2rem;
+      padding: 11px 14px 1px 2px;
+      line-height: 1.62;
+      letter-spacing: 3px;
+    }
   }
   .c-actual__bannertext2 {
     left: 20.4%;
+    @include sp {
+      left: 5%;
+    }
   }
 }
