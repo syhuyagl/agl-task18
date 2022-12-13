@@ -40,8 +40,8 @@ title
       max-width: 760px;
     }
     @include sp {
-      max-width: 375px;
-      padding: 0 20px;
+      max-width: 348px;
+      padding: 0 7px;
       width: 100%;
       margin: 16px auto 0;
     }
@@ -185,7 +185,7 @@ title
         }
         &::after {
           transition: 0.4s;
-          transform:  rotate(35deg) translate(125%, -60px);
+          transform: rotate(35deg) translate(125%, -60px);
         }
       }
     }
@@ -216,7 +216,7 @@ title
     bottom: 2.4%;
     @include sp {
       background: #d05e48;
-      padding: 14px 0 8px;
+      padding: 14px 0 7px;
       text-align: center;
       bottom: 7%;
       img {
@@ -246,10 +246,10 @@ title
     bottom: 2.4%;
     @include sp {
       height: 86px;
-      padding: 13px 0;
+      padding: 14px 0;
       bottom: 6.6%;
       img {
-        width: 25px;
+        width: 23px;
       }
     }
   }
@@ -281,14 +281,14 @@ title
     letter-spacing: 3px;
     @include sp {
       padding-top: 10px;
-      letter-spacing: 1.8px;
+      letter-spacing: 1.4px;
     }
   }
   .c-business__thirddes {
     padding-top: 11px;
     letter-spacing: 2px;
     @include sp {
-      padding-top: 7px;
+      padding-top: 10px;
       letter-spacing: 2px;
     }
   }
@@ -297,11 +297,11 @@ title
     padding-top: 14px;
     @include sp {
       letter-spacing: 2px;
-    padding-top: 9px;
+      padding-top: 10px;
     }
   }
   .c-business__background {
-    background-image: url('../../assets/img/bg-forest.jpg');
+    background-image: url("../../assets/img/bg-forest.jpg");
     width: 100%;
     height: 462px;
     background-position: center;
@@ -316,7 +316,7 @@ title
     }
     @include sp {
       margin-top: 50px;
-      background-image: url('../../assets/img/bg-forest-sp.jpg');
+      background-image: url("../../assets/img/bg-forest-sp.jpg");
       height: 554px;
     }
   }
@@ -374,8 +374,7 @@ title
     }
     @include sp {
       font-size: 1.6rem;
-      letter-spacing: .5px;
-
+      letter-spacing: 0.5px;
     }
   }
   .c-business__titlenote {

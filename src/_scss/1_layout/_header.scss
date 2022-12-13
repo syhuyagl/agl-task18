@@ -5,13 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17px 0px;
+    padding: 17px 0px 16px;
     position: relative;
-    background: rgba(255, 255, 255, 0.9);
     max-width: 1580px;
     margin-left: auto;
-    overflow: hidden;
-   
     width: 100%;
     z-index: 100;
     @include tab {
@@ -25,8 +22,25 @@
   .c-header__logo {
     width: 395px;
     margin-left: 20px;
+    @include medium {
+      min-height: 47px;
+      img {
+        padding-top: 5px;
+      }
+    }
+    @include tab {
+      width: 273px;
+      min-height: 0;
+      img {
+        padding-top: 0;
+      }
+    }
     @include sp {
       width: 165px;
+      min-height: 0;
+      img {
+        padding-top: 0;
+      }
     }
   }
   .c-gnav {
@@ -101,6 +115,12 @@
   }
   .c-header__item {
     margin-left: 21px;
+    padding: 29px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url("../../assets/img/nav-hover.png");
+    }
   }
   .c-header__item:last-child {
     margin-right: 19px;
@@ -117,19 +137,28 @@
     }
   }
   .c-header__item3 {
+    padding: 29px 0;
     margin-left: 39px;
   }
   .c-header__menu {
     padding-right: 13px;
     @include sp {
       padding-right: 19px;
-    padding-top: 2px;
+      padding-top: 2px;
     }
   }
   .c-header__menuicon {
     width: 38px;
     @include sp {
       width: 33px;
+    }
+  }
+  .c-header__closeicon {
+    @include tab {
+      width: 26px;
+    }
+    @include sp {
+      width: 23px;
     }
   }
   .c-header__overlay {
@@ -142,22 +171,33 @@
     z-index: 9999;
     margin-top: 64px;
     @include sp {
-      margin-top: 58px;
+      margin-top: 45px;
     }
   }
   .c-header__menuinfo {
     text-align: center;
-    padding-top: 31px;
-    border-bottom: 1px dashed #cccccc;
+    padding-top: 21px;
+  }
+  .c-header__addressdetail {
+    letter-spacing: 1px;
+    transform: translateX(4px);
+    display: inline-block;
   }
   .c-header__menuaddress {
     font-size: 1.4rem;
     font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
   }
   .c-header__menutel {
     font-size: 1.8rem;
     font-family: "Lora", serif;
     font-weight: 400;
+    @include sp {
+      padding-top: 30px;
+      letter-spacing: 1.5px;
+      padding-bottom: 2px;
+    }
   }
   .c-header__menutellabel {
     font-size: 1.5rem;
@@ -168,16 +208,37 @@
     font-size: 1.2rem;
     font-weight: 400;
     font-family: "Lora", serif;
+    letter-spacing: 1px;
   }
   .c-header__menuitems {
     color: #000;
     font-size: 1.5rem;
     font-weight: 300;
+    letter-spacing: 2px;
+    padding-top: 18px;
   }
   .c-header__menuitem {
-   padding: 25px 10px;
-   border-bottom: 1px dashed #cccccc;
-   display: block;
+    padding: 14px 10px 14px 20px;
+    border-bottom: 1px dashed #cccccc;
+    display: block;
+    &:first-child {
+      border: none;
+      padding: 14px 10px 14px 26px;
+    }
+    &:nth-child(8) {
+      color: #fff;
+      background-color: #40a62a;
+      span {
+        color: #fff;
+      }
+    }
+    &:last-child {
+      background-color: #44b8d1;
+      color: #fff;
+      span {
+        color: #fff;
+      }
+    }
   }
   .c-header__arrow {
     font-size: 1.6rem;
@@ -189,11 +250,45 @@
     font-weight: 600;
     color: #44b8d1;
   }
-  .c-header__back{
+  .c-header__back {
     text-align: center;
     display: block;
     color: #fff;
     background: #333;
+    padding: 9px 20px 11px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .c-header__droplist {
+    padding-top: 16px;
+  }
+  .c-header__dropitem {
+    padding: 14px 10px 14px 20px;
+    border-bottom: 1px dashed #cccccc;
+    display: block;
+    letter-spacing: 2.8px;
+    &:first-child {
+      border: none;
+      padding: 14px 10px 14px 26px;
+    }
+  }
+  .c-header__wrapperfixed {
+    max-width: 1580px;
+  }
+  .c-header__fixedwrapper {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .c-header__infofixed {
+    padding: 23px 36px 21px;
+  }
+  .c-header__inquiryfixed {
+    padding: 31px 20px 21px 19px;
   }
 }
 /* Main menu

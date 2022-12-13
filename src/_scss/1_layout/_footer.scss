@@ -1,8 +1,8 @@
 /*------------------------------------------------------------
 footer
 ------------------------------------------------------------*/
-@include font-face(YuMincho, "./assets/fonts/YuMincho", normal, normal);
-@include font-face(KozGoPro, "./assets/fonts/KozGoPro", normal, normal);
+@include font-face(YuMincho, "../../assets/fonts/YuMincho", normal, normal);
+@include font-face(KozGoPro, "../../assets/fonts/KozGoPro", normal, normal);
 
 .c-footer {
   position: absolute;
@@ -12,7 +12,7 @@ footer
   @include medium {
     bottom: -6.75%;
   }
-  @include sp {
+  @include tab {
     position: static;
   }
   .c-footer__container {
@@ -21,11 +21,15 @@ footer
   }
   .c-footer__left {
     width: 35%;
-    background-image: url("./assets/img/footer-left.png");
+    background-image: url("../../assets/img/footer-left.png");
     @include background;
     position: relative;
+    @include tab {
+      height: 247px;
+      background-size: contain;
+    }
     @include sp {
-      background-image: url("./assets/img/footer-left-sp.png");
+      background-image: url("../../assets/img/footer-left-sp.png");
       height: 394px;
       background-size: contain;
     }
@@ -40,6 +44,9 @@ footer
       color: #fff;
       bottom: 9%;
       left: 5.7%;
+    }
+    @include tab {
+
     }
     @include sp {
       display: none;
@@ -108,10 +115,14 @@ footer
   .c-footer__right {
     width: 35%;
     @include background;
-    background-image: url("./assets/img/footer-right.png");
+    background-image: url("../../assets/img/footer-right.png");
     background-position-x: right;
+    @include tab {
+      height: 247px;
+      background-size: contain;
+    }
     @include sp {
-      background-image: url("./assets/img/footer-right-sp.png");
+      background-image: url("../../assets/img/footer-right-sp.png");
       height: 394px;
       background-size: contain;
     }
@@ -123,6 +134,12 @@ footer
     margin-top: 10.2%;
     @include medium {
       line-height: 1;
+    }
+    @include tab {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 3.2%;
     }
     @include sp {
       line-height: 0.6;

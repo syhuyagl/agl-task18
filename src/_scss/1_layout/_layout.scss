@@ -20,15 +20,7 @@ main {
         display: block;
     }
 }
-.sp-only{
-    display: none;
-    @include tab {
-        display: none;
-    }
-    @include sp {
-        display: block;
-    }
-}
+
 .c-logo{
     text-align: center;
     @include sp {
@@ -65,12 +57,37 @@ main {
 }
 .pc-only{
     display: block;
-
+    @include tab {
+        display: none;
+    }
     @include sp{
         display: none !important;
     }
 }
-
+.sp-only{
+    display: none;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: block;
+    }
+}
+.sp-arrow{
+    display: none !important;
+    @include tab {
+        display: none !important;
+    }
+    @include sp {
+        display: flex  !important;
+    }
+}
+.nav-fixed{
+    position: fixed !important;
+    background: #fff;
+    width: 100%;
+    max-width: 100% !important;
+}
 //-------------------------------------------------------
 .l-container {
     margin: 0 auto;

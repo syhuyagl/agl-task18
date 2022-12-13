@@ -6,6 +6,10 @@ btn
 ------------------------------------------------------------*/
 .c-mainvisual {
   position: relative;
+  margin-top: 1px;
+  @include tab {
+    margin-top: 0;
+  }
   .c-mainvisual__dots {
     display: flex;
     flex-direction: column;

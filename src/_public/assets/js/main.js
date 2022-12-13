@@ -18,7 +18,7 @@ $(document).ready(function () {
       },
     ],
   });
-  $(".c-actual__items").slick({
+  var init = {
     slidesToShow: 1,
     slidesToScroll: 1,
     mobileFirst: true,
@@ -29,14 +29,23 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: $(".c-actual__arrowleft"),
     nextArrow: $(".c-actual__arrowright"),
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: "unslick",
-      },
-    ],
+  };
+  $(window).on("load resize orientationchange", function () {
+    $(".c-actual__items").each(function () {
+      var $carousel = $(this);
+      /* Initializes a slick carousel only on mobile screens */
+      // slick on mobile
+      if ($(window).width() > 768) {
+        if ($carousel.hasClass("slick-initialized")) {
+          $carousel.slick("unslick");
+        }
+      } else {
+        if (!$carousel.hasClass("slick-initialized")) {
+          $carousel.slick(init);
+        }
+      }
+    });
   });
- 
   $(".c-top").mouseenter(function () {
     $(".c-top__button1").removeClass("is-show");
     $(".c-top__button2").addClass("is-show");
@@ -53,10 +62,20 @@ $(document).ready(function () {
       1000
     );
   });
+  $(function(){
+    $(window).scroll(function(){
+      var headerHeight = $('.c-header').height();
+      if($(this).scrollTop() > headerHeight){
+        $('.c-header__fixedwrapper').fadeIn()
+      }
+      else{
+        $('.c-header__fixedwrapper').fadeOut()
+      }
+    });
+  });
   function preventDefault(e) {
     e.preventDefault();
   }
-
   function disableScroll() {
     document.body.addEventListener("touchmove", preventDefault, {
       passive: false,
@@ -78,6 +97,11 @@ $(document).ready(function () {
       enableScroll();
     }
   });
+  if ($(location).attr("pathname") == "/contact.html") {
+    $(".c-footer").addClass("u-contactft");
+  } else {
+    $(".c-footer").removeClass("u-contactft");
+  }
   $(".c-header__dropdown1").click(function () {
     $(".c-header__menuitems").addClass("is-hidden");
     $(".c-header__droplist1").removeClass("is-hidden");

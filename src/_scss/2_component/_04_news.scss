@@ -23,17 +23,18 @@ form
     flex-direction: column;
     max-width: 605px;
     margin: 7px auto 0;
+    @include sp {
+      padding: 0 10px;
+    }
   }
   .c-news__item {
     display: flex;
     padding: 14px 0 13px;
-    @include tab {
-      flex-direction: column;
-    }
     @include sp {
       max-width: 337px;
       position: relative;
       margin: 12px auto 0;
+      flex-direction: column;
       width: 100%;
       border-top: 1px solid #cccccc;
       padding: 1px 0 3px;
@@ -76,8 +77,10 @@ form
     }
   }
   .c-news__item:last-child {
-    border-bottom: 1px solid #cccccc;
-    padding: 1px 0 8px;
+    @include sp {
+      border-bottom: 1px solid #cccccc;
+      padding: 1px 0 8px;
+    }
   }
   .c-news__date {
     font-size: 1.4rem;

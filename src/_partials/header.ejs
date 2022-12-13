@@ -33,21 +33,64 @@
         <img class="c-header__menuicon" src="./assets/img/nav.png" alt="">
       </div>
       <div class="c-header__close is-hidden">
-        <img class="c-header__menuicon" src="./assets/img/nav-close.png" alt="">
+        <img class="c-header__closeicon" src="./assets/img/nav-close.png" alt="">
       </div>
     </div>
   </div>
+  <!-- FIXED NAV -->
+  <div class="c-header__fixedwrapper">
+  <div class="c-header__wrapper c-header__wrapperfixed">
+    <div class="c-header__logo"><a href="<%= BASE_URL %>index.html">
+     <picture>
+       <source media="(max-width: 767px)" srcset="./assets/img/logo-sp.png">
+       <img src="./assets/img/logo-fixed.png" alt="Logo">
+    </picture>
+   </a>
+   </div>
+     <nav class="c-gnav pc-only">
+       <ul class="c-header__navitems">
+         <% if (typeof linklists != 'undefined') { %>
+           <% linklists.main && linklists.main.forEach(link => { %>
+             <li class="c-header__navitem">
+               <a <% if (link.class ) { %>class="<%= link.class %><%= link.fixedClass %>"<% } %> href="<%= link.url %>"><%= link.title %></a>
+               <% if (link.links) { %>
+                 <div class="c-header__subnav is-hover <%=link.sub%>">
+                   <% link.links.forEach(child_link => { %>
+                     <div class="c-header__subnavitem">
+                         <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
+                     </div>
+                   <% }) %>
+                   </div>
+               <% } %>
+             </li>
+           <% }) %>
+         <% } %>
+       </ul>
+       
+   </nav>
+   <div class="c-header__menu tab-below">
+     <div class="c-header__open">
+       <img class="c-header__menuicon" src="./assets/img/nav.png" alt="">
+     </div>
+     <div class="c-header__close is-hidden">
+       <img class="c-header__closeicon" src="./assets/img/nav-close.png" alt="">
+     </div>
+   </div>
+ </div>
+</div>
+
+ <!-- OVERLAY SP -->
   <div class="c-header__overlay tab-below is-hidden">
       <div class="c-header__menuoverlay">
         <div class="c-header__menuinfo">
-          <p class="c-header__menuaddress">〒860-0833　熊本市中央区平成3丁目16番13号</p>
+          <p class="c-header__menuaddress">〒860-0833　<span class="c-header__addressdetail">熊本市中央区平成3丁目16番13号</span></p>
           <p class="c-header__menutel"><span class="c-header__menutellabel">tel.</span>096-285-5177</p>
           <span class="c-header__menufax">fax.096-285-5188</span>
         </div>
       </div>
       <div class="c-header__menuitems">
         <a class="c-header__menuitem">
-          <span class="c-header__arrow">></span> お知らせ
+          お知らせ
         </a>
         <a class="c-header__menuitem">
           <span class="c-header__arrow">></span> 会社案内
@@ -76,31 +119,31 @@
       </div>
       <div class="c-header__droplist1 c-header__droplist is-hidden">
         <a class="c-header__back"><span class="c-header__arrow">&#60;</span> 戻る</a>
-        <a class="c-header__menuitem">
+        <a class="c-header__dropitem">
           <span class="c-header__arrow">></span> 事業紹介（インデックス）
         </a>
-        <a class="c-header__menuitem">
+        <a class="c-header__dropitem">
           <span class="c-header__arrow">></span> 防災・減災業務
         </a>
-        <a class="c-header__menuitem">
-          <span class="c-header__arrow">></span> CT・BIM/CIM
+        <a class="c-header__dropitem">
+          <span class="c-header__arrow">></span> ICT・BIM/CIM
         </a>
-        <a class="c-header__menuitem">
+        <a class="c-header__dropitem">
           <span class="c-header__arrow">></span> 測量・設計業務
         </a>
-        <a class="c-header__menuitem">
+        <a class="c-header__dropitem">
           <span class="c-header__arrow">></span> 調査業務
         </a>
       </div>
       <div class="c-header__droplist2 c-header__droplist  is-hidden">
         <a class="c-header__back"><span class="c-header__arrow">&#60;</span> 戻る</a>
-        <a class="c-header__menuitem">
+        <a class="c-header__dropitem">
           <span class="c-header__arrow">></span> 私たちの仕事
         </a>
-        <a class="c-header__menuitem">
+        <a class="c-header__dropitem">
           <span class="c-header__arrow">></span> 先輩社員の声
         </a>
-        <a class="c-header__menuitem">
+        <a class="c-header__dropitem">
           <span class="c-header__arrow">></span> 募集要項
         </a>
       </div>

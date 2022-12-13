@@ -86,6 +86,11 @@ icon
   }
   .c-actual__itembg {
     position: relative;
+    @include sp {
+      img{
+        width: 100%;
+      }
+    }
   }
   .c-actual__itemdes {
     position: absolute;

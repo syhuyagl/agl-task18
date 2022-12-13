@@ -44,7 +44,8 @@
         "title": "採用情報",
         "url": "/nested/",
         "sub": "c-header__subnav2",
-        "class": "c-header__info",
+        "class": "c-header__info ",
+        "fixedClass": "c-header__infofixed",
         "links": [
           {
             "title": "私たちの仕事",
@@ -62,8 +63,9 @@
       },
       { 
         "title": "お問い合わせ",
-        "url": "/nested/",
-        "class": "c-header__inquiry"
+        "url": "/contact.html",
+        "class": "c-header__inquiry ",
+        "fixedClass": "c-header__inquiryfixed"
       }
     ]
   },
