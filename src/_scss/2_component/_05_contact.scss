@@ -216,5 +216,7 @@ text
     margin: 55px auto 0;
     padding: 12px 92px;
     letter-spacing: 1.3px;
+    position: relative;
+    z-index: 100;
   }
 }

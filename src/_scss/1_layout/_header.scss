@@ -24,23 +24,14 @@
     margin-left: 20px;
     @include medium {
       min-height: 47px;
-      img {
-        padding-top: 5px;
-      }
     }
     @include tab {
       width: 273px;
       min-height: 0;
-      img {
-        padding-top: 0;
-      }
     }
     @include sp {
       width: 165px;
       min-height: 0;
-      img {
-        padding-top: 0;
-      }
     }
   }
   .c-gnav {
@@ -289,6 +280,16 @@
   }
   .c-header__inquiryfixed {
     padding: 31px 20px 21px 19px;
+  }
+  .c-header__logofixed {
+    width: 395px;
+    margin-left: 20px;
+    @include medium {
+      min-height: 0;
+      img {
+        padding-top: 0;
+      }
+    }
   }
 }
 /* Main menu

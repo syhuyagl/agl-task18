@@ -68,6 +68,9 @@ footer
     @include medium {
       font-size: 4rem;
     }
+    @include tab {
+      font-size: 3.7rem;
+    }
     @include sp {
       font-size: 3rem;
     }
@@ -94,6 +97,9 @@ footer
     @include medium {
       font-size: 4rem;
     }
+    @include tab {
+      font-size: 3.7rem;
+    }
     @include sp {
       font-size: 3rem;
     }
@@ -102,9 +108,14 @@ footer
     padding-top: 5px;
     letter-spacing: 2.6px;
     margin-left: -53px;
+    font-weight: 300;
+    font-size: 1.4rem;
     @include medium {
       letter-spacing: 0.3px;
       margin-left: -10.8px;
+    }
+    @include tab {
+      font-size: 1rem;
     }
     @include sp {
       font-size: 1.2rem;
