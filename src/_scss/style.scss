@@ -7,15 +7,15 @@
 @import "0_base/reset";
 @import "0_base/mixin";
 
-.sp-only {
+.is-sp {
     display: none;
 }
 @include sp {
-    .pc-only {
+    .is-pc {
         display: none;
     }
 
-    .sp-only {
+    .is-sp {
         display: block;
     }
 }

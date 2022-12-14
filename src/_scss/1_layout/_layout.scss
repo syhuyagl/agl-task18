@@ -14,7 +14,7 @@ main {
     // padding: 0px 0 100px;
 }
 
-.tab-below {
+.is-btab {
     display: none;
     @include tab {
         display: block;
@@ -55,7 +55,7 @@ main {
 .is-hidden{
     display: none;
 }
-.pc-only{
+.is-pc{
     display: block;
     @include tab {
         display: none;
@@ -64,7 +64,7 @@ main {
         display: none !important;
     }
 }
-.sp-only{
+.is-sp{
     display: none;
     @include tab {
         display: none;
@@ -73,7 +73,7 @@ main {
         display: block;
     }
 }
-.sp-arrow{
+.is-sparrow{
     display: none !important;
     @include tab {
         display: none !important;
@@ -82,7 +82,7 @@ main {
         display: flex  !important;
     }
 }
-.nav-fixed{
+.is-navfixed{
     position: fixed !important;
     background: #fff;
     width: 100%;
