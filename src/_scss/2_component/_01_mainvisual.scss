@@ -149,6 +149,11 @@ btn
     background-color: $blue;
     padding: 2px 6px;
     line-height: 1.1;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.7;
+      transition: 0.4s;
+    }
     @include sp {
       padding: 7px 10px;
     }
@@ -195,6 +200,11 @@ btn
     margin-left: 55px;
     font-size: 1.3rem;
     letter-spacing: 1px;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.7;
+      transition: 0.4s;
+    }
     @include sp {
       font-size: 1.3rem;
       letter-spacing: 1px;

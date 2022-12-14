@@ -346,6 +346,9 @@ title
       }
     }
   }
+  .c-business__flower{
+    color: #ff9900;
+  }
   .c-business__matricepro {
     width: 60%;
     margin-top: -43px;
@@ -439,7 +442,14 @@ title
     font-weight: 600;
     padding-top: 24px;
     font-size: 1.8rem;
+    position: relative;
     letter-spacing: 2px;
+    z-index: 100;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.7;
+      transition: 0.4s;
+    }
     @include sp {
       font-size: 1.4rem;
       padding-top: 21px;

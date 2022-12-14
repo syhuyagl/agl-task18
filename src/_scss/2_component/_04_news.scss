@@ -153,4 +153,13 @@ form
       padding: 16px 0;
     }
   }
+  .c-news__morebtn{
+    position: relative;
+    z-index: 100;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.7;
+      transition: 0.4s;
+    }
+  }
 }
