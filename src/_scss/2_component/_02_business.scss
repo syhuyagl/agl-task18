@@ -360,8 +360,9 @@ title
       margin-right: 0px;
       img {
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        align-self: center;
+        display: inline-flex;
+        -webkit-align-self: center; //safari 7+
       }
     }
     @include tab {
