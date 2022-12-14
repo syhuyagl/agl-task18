@@ -84,25 +84,25 @@ $(document).ready(function () {
     e.preventDefault();
   }
   function disableScroll() {
-    document.body.addEventListener("touchmove", preventDefault, {
-      passive: false,
-    });
+    var ycoord = $(window).scrollTop();
+    $('.c-header__overlay').data('ycoord',ycoord);
+    ycoord = ycoord * -1;
+    $('body').css('position','fixed').css('left','0px').css('right','0px').css('top',ycoord + 'px');
   }
   function enableScroll() {
-    document.body.removeEventListener("touchmove", preventDefault);
+    $('body').css('position','').css('left','auto').css('right','auto').css('top','auto');
+    $(window).scrollTop($('.c-header__overlay').data('ycoord'));
   }
   $(".c-header__menu").click(function () {
     if (!$(".c-header__open").hasClass("is-hidden")) {
       $(".c-header__open").addClass("is-hidden");
       $(".c-header__close").removeClass("is-hidden");
       $(".c-header__overlay").removeClass("is-hidden");
-      $body.style.overflow = "hidden";
       disableScroll();
     } else {
       $(".c-header__close").addClass("is-hidden");
       $(".c-header__open").removeClass("is-hidden");
       $(".c-header__overlay").addClass("is-hidden");
-      $body.style.removeProperty("overflow");
       enableScroll();
     }
   });
