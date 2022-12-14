@@ -1,9 +1,14 @@
 /*------------------------------------------------------------
 footer
 ------------------------------------------------------------*/
-@include font-face(YuMincho, "../../assets/fonts/YuMincho", normal, normal);
-@include font-face(KozGoPro, "../../assets/fonts/KozGoPro", normal, normal);
-
+@font-face {
+  font-family: "YuMincho";
+  src: url("../../assets/fonts/YuMincho.ttf");
+}
+@font-face {
+  font-family: "KozGoPro";
+  src: url("../../assets/fonts/KozGoPro.otf");
+}
 .c-footer {
   position: absolute;
   color: #333333;
