@@ -6,11 +6,11 @@
     <div class="c-news__items">
         <% if (typeof news != 'undefined') { %>
             <% news.items && news.items.forEach(item => { %>
-                <div class="c-news__item">
+                <a class="c-news__item">
                     <p class="c-news__date"><%=item.date%></p>
                     <h3 class="c-news__title"><%=item.title%></h3>
                     <span class="c-news__icon <%=item.iconClass%>">></span>
-                </div>
+                </a>
             <% }) %>
         <% } %>
     </div>

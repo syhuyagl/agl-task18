@@ -11,7 +11,7 @@ $(document).ready(function () {
     dots: true,
     responsive: [
       {
-        breakpoint: 727,
+        breakpoint: 768,
         settings: {
           dots: false,
         },
@@ -96,15 +96,17 @@ $(document).ready(function () {
       $(".c-header__open").addClass("is-hidden");
       $(".c-header__close").removeClass("is-hidden");
       $(".c-header__overlay").removeClass("is-hidden");
+      $body.style.overflow = "hidden";
       disableScroll();
     } else {
       $(".c-header__close").addClass("is-hidden");
       $(".c-header__open").removeClass("is-hidden");
       $(".c-header__overlay").addClass("is-hidden");
+      $body.style.removeProperty("overflow");
       enableScroll();
     }
   });
-  if ($(location).attr("pathname") == "/contact.html") {
+  if ($(location).attr("pathname").includes("contact.html")) {
     $(".c-footer").addClass("u-contactft");
   } else {
     $(".c-footer").removeClass("u-contactft");
@@ -121,14 +123,29 @@ $(document).ready(function () {
     $(".c-header__droplist").addClass("is-hidden");
     $(".c-header__menuitems").removeClass("is-hidden");
   });
-  $("#form").on("submit", function (e) {
-    $("#form").validate();
-    e.preventDefault();
-  });
-  $('.input').keypress(function (e) {
-    if (e.which == 13) {
-      $('form#login').submit();
-      return false;    //<---- Add this line
-    }
+  var $form = $("form")
+  $form.validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      phone: {
+        required: true,
+        digits: true
+      },
+      content: {
+        required: true,
+      }
+    },
+    messages: {
+      name: "お名前を入力してください",
+      email: "有効なメールアドレスを入力してください",
+      phone: "電話番号を入力してください",
+      content: "内容を入力してください"
+    },
   });
 });

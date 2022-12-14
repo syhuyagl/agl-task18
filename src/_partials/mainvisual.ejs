@@ -4,8 +4,8 @@
             <% mainvisual.slides && mainvisual.slides.forEach(slide => { %>
                 <div class="c-mainvisual__slide">
                     <picture>
-                        <source media="(max-width: 767px )" srcset="<%= slide.srcSp %>">
-                        <img src="<%= slide.src %>" alt="">
+                        <source media="(max-width: 1023px )" srcset="<%= slide.srcSp %>">
+                        <img src="<%= slide.src %>" alt="Home page">
                     </picture>
                 </div>
             <% }) %>
@@ -46,7 +46,7 @@
                             <p>2018年11月22日</p>
                             </div>
                             <div class="c-mainvisual__content">
-                            <p>先進建設 <span class="c-mainvisual__contentadjust">・防災・減災技術フェアin熊本にドローン等について出展しました。</span></p>
+                            <h1>先進建設 <span class="c-mainvisual__contentadjust">・防災・減災技術フェアin熊本にドローン等について出展しました。</span></h1>
                              </div>
                         </div>
             </div>
@@ -56,7 +56,9 @@
         </div>
     </div>
     <div class="c-mainvisual__scroll">
+        &nbsp;
     </div>
     <div class="c-mainvisual__scrolldot">
+        &nbsp;
     </div>
 </section>

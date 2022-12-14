@@ -20,13 +20,13 @@ btn
     bottom: 20.7%;
     transform: translateX(-50%);
     z-index: 10;
-    @include tab {
+    @include sp {
       width: 18px;
       height: 24px;
       border: 1px solid #fff;
       border-radius: 8px;
       left: 50%;
-      bottom: 30.7%;
+      bottom: 30.5%;
     }
   }
   .c-mainvisual__scrolldot {
@@ -39,17 +39,13 @@ btn
     bottom: 26.1%;
     transform: translate(-50%, 0);
     z-index: 10;
-    animation: movedown 2s infinite;
     transition: 0.4s;
     @include tab {
-      animation: none;
-      width: 5px;
-      height: 5px;
       position: absolute;
       border-radius: 50%;
       background: #fff;
       left: 50%;
-      bottom: 33.3%;
+      bottom: 25.1%;
     }
     @include sp {
       width: 5px;
@@ -58,8 +54,7 @@ btn
       border-radius: 50%;
       background: #fff;
       left: 50%;
-      bottom: 33.3%;
-      animation: movedownsp 2s infinite;
+      bottom: 33.4%;
     }
   }
   .c-mainvisual__dots {
@@ -74,10 +69,17 @@ btn
     border-radius: 50%;
     background-color: #000;
   }
+  .c-mainvisual__slide {
+    @include tab {
+      img {
+        width: 100%;
+      }
+    }
+  }
   .slick-dots {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
     flex-direction: column;
     position: absolute;
     right: 0;
@@ -130,6 +132,7 @@ btn
       transform: translate(0);
       flex-direction: column;
       padding: 14px 10px 16px;
+      max-width: 767px;
     }
   }
   .c-mainvisual__arrows {
@@ -164,11 +167,20 @@ btn
   .c-mainvisual__content {
     margin-left: 19px;
     letter-spacing: 2px;
+    h1{
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
     @include sp {
       margin-left: 15px;
       letter-spacing: 1.3px;
       line-height: 1.6;
       padding-top: 10px;
+      min-width: 224px;
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
     }
   }
   .c-mainvisual__contentadjust {
@@ -206,20 +218,16 @@ btn
     font-size: 1.2rem;
     font-weight: 300;
   }
-  @keyframes movedown {
-    0% {
-      transform: translate(-50%, 0px);
-    }
-    100% {
-      transform: translate(-50%, 100%);
-    }
-  }
-  @keyframes movedownsp {
-    0% {
-      transform: translate(-50%, 0px);
-    }
-    100% {
-      transform: translate(-50%, 10px);
+  .c-mainvisual__slidetext {
+    font-size: 8rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Lora", serif;
+    p {
+      font-size: 1.8rem;
     }
   }
 }

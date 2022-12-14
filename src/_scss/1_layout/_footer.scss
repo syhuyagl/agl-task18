@@ -57,7 +57,7 @@ footer
     display: none;
     @include sp {
       display: block;
-      padding: 4px;
+      padding: 30px 0 4px;
     }
   }
   .c-footer__leftlogo {
@@ -232,6 +232,7 @@ footer
       font-size: 1.8rem;
     }
   }
+
   .c-footer__fax {
     font-family: YuMincho;
     font-size: 1.6rem;
@@ -297,6 +298,11 @@ footer
       font-size: 1rem;
       letter-spacing: 1.2px;
       padding-top: 28px;
+    }
+  }
+  .c-footer__iconsp{
+    @include sp {
+      color: #fff;
     }
   }
 }

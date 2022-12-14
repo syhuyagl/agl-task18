@@ -30,6 +30,7 @@ form
   .c-news__item {
     display: flex;
     padding: 14px 0 13px;
+    cursor: pointer;
     @include sp {
       max-width: 337px;
       position: relative;

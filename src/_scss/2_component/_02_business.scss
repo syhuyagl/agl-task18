@@ -59,7 +59,7 @@ title
       height: 560px;
       transition: 0.4s;
       opacity: 0.7;
-      transform: rotate(-31deg) translate(-106px, -60px);
+      transform: rotate(-31deg) translate(-39.2%, -60px);
     }
     &::after {
       content: "";
@@ -207,8 +207,6 @@ title
       width: 81.3%;
     }
   }
-  .c-business__icon {
-  }
   .c-business__tsunami {
     background: #d05e48;
     padding: 19px 0;
@@ -310,6 +308,26 @@ title
     margin-top: 101px;
     position: relative;
     display: flex;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 90.8%;
+      width: 1px;
+      background: #ff0000;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      height: 7px;
+      width: 7px;
+      border-radius: 50%;
+      background: #ff0000;
+      left: 50%;
+      bottom: 8.7%;
+      transform: translateX(-50%);
+    }
     @include tab {
       flex-direction: column;
       height: 624px;
@@ -318,6 +336,14 @@ title
       margin-top: 50px;
       background-image: url("../../assets/img/bg-forest-sp.jpg");
       height: 554px;
+      &::before{
+        height: 93.9%;
+      }
+      &::after{
+        height: 5px;
+        width: 5px;
+        bottom: 5.2%;
+      }
     }
   }
   .c-business__matricepro {
@@ -349,6 +375,8 @@ title
     transform: translateX(-143px);
     max-width: 557px;
     color: #fff;
+    position: relative;
+   
     @include medium {
       transform: translateX(-28px);
       color: #fff;
