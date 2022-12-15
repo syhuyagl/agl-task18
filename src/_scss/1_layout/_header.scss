@@ -162,6 +162,11 @@
     height: 100%;
     z-index: 9999;
     margin-top: 64px;
+    @include tab {
+      height: -webkit-calc(100% - 64px);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
     @include sp {
       margin-top: 45px;
       height: -webkit-calc(100% - 45px);
@@ -188,7 +193,7 @@
     font-size: 1.8rem;
     font-family: "Lora", serif;
     font-weight: 400;
-    @include sp {
+    @include tab {
       display: block;
       padding-top: 6px;
       letter-spacing: 1.5px;

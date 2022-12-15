@@ -85,13 +85,21 @@ $(document).ready(function () {
   }
   function disableScroll() {
     var ycoord = $(window).scrollTop();
-    $('.c-header__overlay').data('ycoord',ycoord);
+    $(".c-header__overlay").data("ycoord", ycoord);
     ycoord = ycoord * -1;
-    $('body').css('position','fixed').css('left','0px').css('right','0px').css('top',ycoord + 'px');
+    $("body")
+      .css("position", "fixed")
+      .css("left", "0px")
+      .css("right", "0px")
+      .css("top", ycoord + "px");
   }
   function enableScroll() {
-    $('body').css('position','').css('left','auto').css('right','auto').css('top','auto');
-    $(window).scrollTop($('.c-header__overlay').data('ycoord'));
+    $("body")
+      .css("position", "")
+      .css("left", "auto")
+      .css("right", "auto")
+      .css("top", "auto");
+    $(window).scrollTop($(".c-header__overlay").data("ycoord"));
   }
   $(".c-header__menu").click(function () {
     if (!$(".c-header__open").hasClass("is-hidden")) {
@@ -123,7 +131,18 @@ $(document).ready(function () {
     $(".c-header__droplist").addClass("is-hidden");
     $(".c-header__menuitems").removeClass("is-hidden");
   });
-  var $form = $("form")
+  var $form = $("form");
+  $.validator.addMethod(
+    "noSpacing",
+    function (value, element) {
+      if ($.trim(value).length == 0) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+    "内容を入力してください。"
+  );
   $form.validate({
     rules: {
       name: {
@@ -135,17 +154,18 @@ $(document).ready(function () {
       },
       phone: {
         required: true,
-        digits: true
+        digits: true,
       },
       content: {
         required: true,
-      }
+        noSpacing: true,
+      },
     },
     messages: {
-      name: "お名前を入力してください",
-      email: "有効なメールアドレスを入力してください",
-      phone: "電話番号を入力してください",
-      content: "内容を入力してください"
+      name: "お名前を入力してください。",
+      email: "有効なメールアドレスを入力してください。",
+      phone: "電話番号を入力してください。",
+      content: "内容を入力してください。",
     },
   });
 });
