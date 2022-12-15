@@ -20,6 +20,12 @@ btn
     bottom: 20.7%;
     transform: translateX(-50%);
     z-index: 10;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.4s;
+    }
     @include sp {
       width: 18px;
       height: 24px;
@@ -284,6 +290,7 @@ btn
     text-shadow: #888 0px 0px 5px;
     @include sp {
       top: 42.1%;
+      min-width: 189px;
     }
   }
   .c-mainvisual__smalltext {
@@ -324,13 +331,14 @@ btn
     transform: translateX(0px);
     @include sp {
       font-size: 1.4rem;
+      transform: translateX(6px);
     }
   }
   .c-mainvisual__subtext {
     transform: translateX(5px);
     margin-top: 37px;
     @include sp {
-      transform: translateX(0);
+      transform: translateX(-3px);
       line-height: 0.4;
       margin-top: 20px;
     }
@@ -347,7 +355,7 @@ btn
       font-size: 0.9rem;
     }
   }
-  .c-mainvisual__maintextfix{
+  .c-mainvisual__maintextfix {
     display: inline-block;
     transform: translateX(-13px);
   }

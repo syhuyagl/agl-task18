@@ -5,7 +5,7 @@ $(document).ready(function () {
     fade: true,
     speed: 1100,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     cssEase: "linear",
     arrows: false,
     dots: true,
@@ -62,6 +62,14 @@ $(document).ready(function () {
       1000
     );
   });
+  $(".c-mainvisual__scroll").click(function(){
+    $("html, body").animate(
+      {
+        scrollTop: document.body.scrollHeight,
+      },
+      1000
+    );
+  })
   $(function () {
     $(window).scroll(function () {
       if ($(window).width() > 1023) {

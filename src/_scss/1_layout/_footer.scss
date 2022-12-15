@@ -173,12 +173,14 @@ footer
   }
   .c-footer__company {
     padding-top: 8px;
+    transform: translate(4px, 3px);
     @include sp {
       font-size: 1.2rem;
       max-width: 300px;
       margin: 0 auto;
       padding-top: 13px;
       letter-spacing: 0px;
+      transform: translate(0, 0);
       line-height: 1.45;
       text-shadow: #eee 0px 0px 3px;
     }
@@ -195,8 +197,9 @@ footer
   .c-footer__companybig {
     font-size: 1.6rem;
     font-weight: 600;
-    letter-spacing: 0px;
-    transform: translate(-2px, 2px);
+    letter-spacing: 0.5px;
+    transform: translate(-1px, 2px);
+
     display: inline-block;
     @include sp {
       font-size: 1.2rem;
@@ -276,6 +279,7 @@ footer
       width: 69.2%;
       margin: 0 auto;
       letter-spacing: 1px;
+      min-width: 260px;
     }
   }
   .c-footer__icon {

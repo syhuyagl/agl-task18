@@ -30,8 +30,7 @@ title
   }
   .c-business__items {
     display: flex;
-    max-width: 1218px;
-    padding: 0 23px;
+    padding: 0 14px;
     width: 100%;
     margin: 39px auto 0;
     justify-content: space-between;
@@ -214,9 +213,9 @@ title
     bottom: 2.4%;
     @include sp {
       background: #d05e48;
-      padding: 14px 0 7px;
+      padding: 14px 0 9px;
       text-align: center;
-      bottom: 7%;
+      bottom: 6%;
       img {
         width: 30px;
       }

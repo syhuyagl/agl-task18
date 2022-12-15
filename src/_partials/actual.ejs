@@ -1,5 +1,5 @@
 <section class="c-actual">
-  <div class="c-container c-actual__top">
+  <div class="c-actual__top">
     <div class="c-logo">
       <img src="./assets/img/section-logo.png" alt="実績紹介" >
     </div>
@@ -8,7 +8,7 @@
       『地域の人たちが安全に安心して暮らせるように、<br >
       <span class="c-actual__subheadingline2">そして豊かに快適に暮らせるように』、そんな想いを込めて仕事をしています。</span>
     </p>
-    <div class="c-actual__items">
+    <div class="c-actual__items l-container">
         <% if (typeof actual != 'undefined') { %>
             <% actual.items && actual.items.forEach(item => { %>
                 <a class="<%= item.class %> c-actual__item">
@@ -19,9 +19,7 @@
                       </picture>
                         <p class="<%= item.labelClass %> c-actual__itemdes"><%=item.des%></p>
                     </div>
-                    <div class="c-actual__title">
-                        <p><%=item.title%></p>
-                    </div>
+                      <h3 class="c-actual__title"><%=item.title%></h3>
                   </a>
             <% }) %>
         <% } %>
