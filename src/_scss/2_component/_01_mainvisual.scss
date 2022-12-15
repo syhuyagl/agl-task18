@@ -70,16 +70,20 @@ btn
     background-color: #000;
   }
   .c-mainvisual__slide {
+    height: 671px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
     @include tab {
-      img {
-        width: 100%;
-      }
+    }
+    @include sp {
+      height: 389px;
     }
   }
   .slick-dots {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     flex-direction: column;
     position: absolute;
     right: 0;
@@ -151,7 +155,7 @@ btn
     padding: 2px 6px;
     line-height: 1.1;
     cursor: pointer;
-    &:hover{
+    &:hover {
       opacity: 0.7;
       transition: 0.4s;
     }
@@ -173,7 +177,7 @@ btn
   .c-mainvisual__content {
     margin-left: 19px;
     letter-spacing: 2px;
-    h1{
+    h1 {
       font-size: 1.5rem;
       font-weight: 300;
     }
@@ -202,7 +206,7 @@ btn
     font-size: 1.3rem;
     position: relative;
     letter-spacing: 1px;
-    &::before{
+    &::before {
       content: "";
       background: #eee;
       opacity: 0.4;
@@ -212,7 +216,7 @@ btn
       top: -6px;
       left: 2px;
     }
-    &:hover{
+    &:hover {
       cursor: pointer;
       opacity: 0.7;
       transition: 0.4s;
@@ -225,7 +229,7 @@ btn
       padding-top: 11px;
       margin-left: 0;
       border-top: 1px solid #ccc;
-      &::before{
+      &::before {
         display: none;
       }
     }
@@ -249,10 +253,124 @@ btn
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -58.9%);
+    @include sp {
+      transform: translate(-50%, -50%);
+      top: 49.3%;
+    }
+  }
+  .c-mainvisual__bigtext {
+    font-size: 8rem;
+    letter-spacing: 11.2px;
     font-family: "Lora", serif;
-    p {
-      font-size: 1.8rem;
+    line-height: 1.45;
+    font-weight: 400;
+    @include tab {
+    }
+    @include sp {
+      font-size: 5rem;
+      letter-spacing: 4.7px;
+      line-height: 1.3;
+    }
+  }
+  .c-mainvisual__mainslidetext {
+    font-size: 8rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 38%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    @include sp {
+      top: 42.3%;
+    }
+  }
+  .c-mainvisual__smalltext {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    @include sp {
+      font-size: 1.5rem;
+      letter-spacing: 1.6px;
+    }
+  }
+  .c-mainvisual__maintext {
+    font-size: 9rem;
+    letter-spacing: 9px;
+    font-family: "Lora", serif;
+    line-height: 0.48;
+    font-weight: 400;
+    @include sp {
+      font-size: 4.5rem;
+      letter-spacing: 4.5px;
+      text-align: center;
+    }
+  }
+  .c-mainvisual__small {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2.8rem;
+    @include sp {
+      font-size: 1.4rem;
+    }
+  }
+  .c-mainvisual__subtext {
+    transform: translateX(5px);
+    @include sp {
+      transform: translateX(0);
+      line-height: 0.4;
+    }
+  }
+  .c-mainvisual__mainsmalltext {
+    letter-spacing: 1.2px;
+    transform: translateY(-9px);
+    font-size: 1.8rem;
+    font-weight: 300;
+    @include sp {
+      letter-spacing: 0.6px;
+      transform: translateY(10px);
+      font-size: 0.9rem;
+    }
+  }
+  .c-mainvisual__logo {
+    position: absolute;
+    top: 14.9%;
+    left: 50%;
+    transform: translateX(-50%);
+    @include tab {
+      width: 84.4%;
+      max-width: 650px;
+    }
+    @include sp {
+      width: 84.4%;
+      top: 24.3%;
+      max-width: 317px;
+    }
+  }
+  .c-mainvisual__slide1 {
+    background-image: url("../../assets/img/mv1.jpg");
+    @include tab {
+      background-image: url("../../assets/img/mv1-sp.jpg");
+    }
+  }
+  .c-mainvisual__slide2 {
+    background-image: url("../../assets/img/mv2.jpg");
+    @include tab {
+      background-image: url("../../assets/img/mv2-sp.jpg");
+    }
+  }
+  .c-mainvisual__slide3 {
+    background-image: url("../../assets/img/mv3.jpg");
+    @include tab {
+      background-image: url("../../assets/img/mv3-sp.jpg");
+    }
+  }
+  .c-mainvisual__slide4 {
+    background-image: url("../../assets/img/mv4.jpg");
+    @include tab {
+      background-image: url("../../assets/img/mv4-sp.jpg");
     }
   }
 }

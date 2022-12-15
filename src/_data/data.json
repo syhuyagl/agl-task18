@@ -73,19 +73,30 @@
     "slides":[
       {
         "src": "./assets/img/mv1.jpg",
-        "srcSp":"./assets/img/mv1-sp.jpg"
+        "srcSp":"./assets/img/mv1-sp.jpg",
+        "mainSlide": "c-mainvisual__mainslide",
+        "slideIndex": "c-mainvisual__slide1"
       },
       {
         "src": "./assets/img/mv2.jpg",
-        "srcSp":"./assets/img/mv2-sp.jpg"
+        "heading": "Protect",
+        "sub": "生命と財産を守る",
+        "srcSp":"./assets/img/mv2-sp.jpg",
+        "slideIndex": "c-mainvisual__slide2"
       },
       {
         "src": "./assets/img/mv3.jpg",
-        "srcSp":"./assets/img/mv3-sp.jpg"
+        "heading": "Connect",
+        "sub": "地域と人を繋ぐ",
+        "srcSp":"./assets/img/mv3-sp.jpg",
+        "slideIndex": "c-mainvisual__slide3"
       },
       {
         "src": "./assets/img/mv4.jpg",
-        "srcSp":"./assets/img/mv4-sp.jpg"
+        "heading": "Technology",
+        "sub": "最新技術を生かす",
+        "srcSp":"./assets/img/mv4-sp.jpg",
+        "slideIndex": "c-mainvisual__slide4"
       }
     ]
   },

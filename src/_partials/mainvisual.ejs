@@ -2,11 +2,30 @@
     <div class="c-mainvisual__slider">
         <% if (typeof mainvisual != 'undefined') { %>
             <% mainvisual.slides && mainvisual.slides.forEach(slide => { %>
-                <div class="c-mainvisual__slide">
-                    <picture>
-                        <source media="(max-width: 1023px )" srcset="<%= slide.srcSp %>">
-                        <img src="<%= slide.src %>" alt="Home page">
-                    </picture>
+                <div class="c-mainvisual__slide <%=slide.slideIndex%>">
+                    <% if (slide.mainSlide) {%>
+                        <div class="c-mainvisual__mainslidetext">
+                            <div class="c-mainvisual__maininner">
+                                <h1 class="c-mainvisual__maintext">Protect</h1>
+                                <div class="c-mainvisual__subtext">
+                                    <span class="c-mainvisual__small">the</span><p class="c-mainvisual__maintext u-inline">future</p>
+                                </div>
+                                <p class="c-mainvisual__smalltext c-mainvisual__mainsmalltext">防災技術を駆使し、地域の未来を守る。</p>
+                             
+                            </div>
+                        </div>
+                        <div class="c-mainvisual__logo">
+                            <picture>
+                                <source media="(max-width: 767px )" srcset="./assets/img/logo-mark-sp.png">
+                                <img src="./assets/img/logo-mark.png" alt="Protect">
+                            </picture>
+                        </div>  
+                    <%} else { %>
+                        <div class="c-mainvisual__slidetext">
+                            <h2 class="c-mainvisual__bigtext"><%= slide.heading %></h2>
+                            <p class="c-mainvisual__smalltext"><%= slide.sub %></p>
+                        </div>
+                    <%}%>
                 </div>
             <% }) %>
           <% } %>
