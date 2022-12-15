@@ -26,6 +26,36 @@ btn
       opacity: 0.7;
       transition: 0.4s;
     }
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border-radius: 50%;
+      background: #fff;
+      left: 50%;
+      bottom: 61.1%;
+      transform: translate(-50%, 0);
+      z-index: 10;
+      transition: 0.4s;
+      animation: movedown 2s infinite;
+      @include tab {
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        left: 50%;
+        bottom: 61.1%;
+      }
+      @include sp {
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        left: 50%;
+        bottom: 61.1%;
+      }
+    }
     @include sp {
       width: 18px;
       height: 24px;
@@ -35,34 +65,7 @@ btn
       bottom: 30.5%;
     }
   }
-  .c-mainvisual__scrolldot {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border-radius: 50%;
-    background: #fff;
-    left: 50%;
-    bottom: 26.1%;
-    transform: translate(-50%, 0);
-    z-index: 10;
-    transition: 0.4s;
-    @include tab {
-      position: absolute;
-      border-radius: 50%;
-      background: #fff;
-      left: 50%;
-      bottom: 25.1%;
-    }
-    @include sp {
-      width: 5px;
-      height: 5px;
-      position: absolute;
-      border-radius: 50%;
-      background: #fff;
-      left: 50%;
-      bottom: 33.4%;
-    }
-  }
+
   .c-mainvisual__dots {
     display: flex;
     flex-direction: column;
@@ -376,6 +379,20 @@ btn
       max-width: 317px;
       min-width: 0;
     }
+  }
+  @keyframes movedown {
+      0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+      }
+      50% {
+        transform: translate(-50%, 200%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, 0);
+        opacity: 0;
+      }
   }
   .c-mainvisual__slide1 {
     background-image: url("../../assets/img/mv1.jpg");
