@@ -51,7 +51,6 @@ footer
       left: 5.7%;
     }
     @include tab {
-
     }
     @include sp {
       display: none;
@@ -181,6 +180,7 @@ footer
       padding-top: 13px;
       letter-spacing: 0px;
       line-height: 1.45;
+      text-shadow: #eee 0px 0px 3px;
     }
   }
   .c-footer__companysmall {
@@ -188,6 +188,7 @@ footer
     letter-spacing: 0.5px;
     font-weight: 300;
     @include sp {
+      text-shadow: #eee 0px 0px 3px;
       font-size: 1.2rem;
     }
   }
@@ -200,7 +201,8 @@ footer
     @include sp {
       font-size: 1.2rem;
       transform: translate(6px, 2px);
-    letter-spacing: 0.8px;
+      text-shadow: #eee 0px 0px 3px;
+      letter-spacing: 0.8px;
     }
   }
   .c-footer__address {
@@ -212,6 +214,7 @@ footer
     @include sp {
       letter-spacing: 1px;
       padding-top: 9px;
+      text-shadow: #eee 0px 0px 3px;
       font-size: 1.2rem;
     }
   }
@@ -229,6 +232,7 @@ footer
       font-size: 1.6rem;
       letter-spacing: 0.8px;
       margin-right: 7px;
+      text-shadow: #eee 0px 0px 3px;
       padding-top: 25px;
     }
   }
@@ -256,6 +260,7 @@ footer
     @include sp {
       font-size: 1.2rem;
       letter-spacing: 1.3px;
+      text-shadow: #eee 0px 0px 3px;
       padding-top: 17px;
     }
   }
@@ -267,6 +272,7 @@ footer
     padding-top: 12px;
     @include sp {
       padding-top: 22px;
+      text-shadow: #eee 0px 0px 3px;
       width: 69.2%;
       margin: 0 auto;
       letter-spacing: 1px;
@@ -310,12 +316,13 @@ footer
     @include sp {
       font-size: 1rem;
       letter-spacing: 1.2px;
+      text-shadow: #eee 0px 0px 3px;
       padding-top: 28px;
     }
   }
-  .c-footer__iconsp{
+  .c-footer__iconsp {
     @include sp {
-      color: #fff;
+      text-shadow: #eee 0px 0px 3px;
     }
   }
 }
