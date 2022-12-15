@@ -164,9 +164,9 @@
     margin-top: 64px;
     @include sp {
       margin-top: 45px;
-      height: calc(100vh - 45px);
-      -webkit-overflow-scrolling: touch;
-      overflow: auto;
+      height: -webkit-calc(100% - 45px);
+      overflow-y: auto;
+      overflow-x: hidden;
     }
   }
   .c-header__menuinfo {
