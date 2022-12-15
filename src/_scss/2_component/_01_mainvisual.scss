@@ -274,15 +274,14 @@ btn
     }
   }
   .c-mainvisual__mainslidetext {
-    font-size: 8rem;
     color: #fff;
     position: absolute;
     left: 50%;
-    top: 38%;
+    top: 36.6%;
     z-index: 1;
     transform: translate(-50%, -50%);
     @include sp {
-      top: 42.3%;
+      top: 42.1%;
     }
   }
   .c-mainvisual__smalltext {
@@ -301,6 +300,10 @@ btn
     font-family: "Lora", serif;
     line-height: 0.48;
     font-weight: 400;
+    text-align: center;
+    @include tab {
+      letter-spacing: 8px;
+    }
     @include sp {
       font-size: 4.5rem;
       letter-spacing: 4.5px;
@@ -312,20 +315,24 @@ btn
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 2.8rem;
+    display: inline-block;
+    transform: translateX(0px);
     @include sp {
       font-size: 1.4rem;
     }
   }
   .c-mainvisual__subtext {
     transform: translateX(5px);
+    margin-top: 37px;
     @include sp {
       transform: translateX(0);
       line-height: 0.4;
+      margin-top: 20px;
     }
   }
   .c-mainvisual__mainsmalltext {
     letter-spacing: 1.2px;
-    transform: translateY(-9px);
+    transform: translateY(8px);
     font-size: 1.8rem;
     font-weight: 300;
     @include sp {
@@ -333,6 +340,10 @@ btn
       transform: translateY(10px);
       font-size: 0.9rem;
     }
+  }
+  .c-mainvisual__maintextfix{
+    display: inline-block;
+    transform: translateX(-13px);
   }
   .c-mainvisual__logo {
     position: absolute;
