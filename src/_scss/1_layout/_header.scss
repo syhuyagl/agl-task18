@@ -85,9 +85,11 @@
     color: #333333;
     font-weight: 300;
     position: relative;
+    transition: 0.4s;
     &:hover {
       .c-header__subnav {
         display: flex;
+        transition: 0.4s;
       }
     }
   }
@@ -110,7 +112,9 @@
     padding: 29px 0;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.4s;
     &:hover {
+      transition: 0.4s;
       background-image: url("../../assets/img/nav-hover.png");
     }
   }

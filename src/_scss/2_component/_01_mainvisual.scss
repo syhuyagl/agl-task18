@@ -350,14 +350,17 @@ btn
     top: 14.9%;
     left: 50%;
     transform: translateX(-50%);
+    min-width: 630px;
     @include tab {
       width: 84.4%;
       max-width: 650px;
+      min-width: 0;
     }
     @include sp {
       width: 84.4%;
       top: 24.3%;
       max-width: 317px;
+      min-width: 0;
     }
   }
   .c-mainvisual__slide1 {
