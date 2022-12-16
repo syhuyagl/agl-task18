@@ -167,6 +167,7 @@ footer
     }
   }
   .c-footer__logo {
+    display: inherit;
     @include medium {
       img {
         width: 95px;
