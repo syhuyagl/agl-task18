@@ -218,9 +218,8 @@ text
     letter-spacing: 1.3px;
     position: relative;
     z-index: 100;
-  }
-  .c-contact__formsubmit{
     cursor: pointer;
+    font-family:inherit;
     transition: 0.4s;
     &:hover{
       opacity: 0.7;

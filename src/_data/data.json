@@ -43,9 +43,9 @@
       {
         "title": "採用情報",
         "url": "/nested/",
-        "sub": "c-header__subnav2",
-        "class": "c-header__info ",
-        "fixedClass": "c-header__infofixed",
+        "sub": " c-header__subnav2",
+        "class": "c-header__info",
+        "fixedClass": " c-header__infofixed",
         "links": [
           {
             "title": "私たちの仕事",
@@ -64,8 +64,8 @@
       { 
         "title": "お問い合わせ",
         "url": "contact.html",
-        "class": "c-header__inquiry ",
-        "fixedClass": "c-header__inquiryfixed"
+        "class": "c-header__inquiry",
+        "fixedClass": " c-header__inquiryfixed"
       }
     ]
   },
@@ -117,7 +117,7 @@
         "title": "ICT・BIM/CIM",
         "class": "c-business__drone",
         "desClass":"c-business__secondes",
-        "classHover": "c-business__opposite"
+        "classHover": " c-business__opposite"
       },
       {
         "src": "./assets/img/background-3.jpg",
@@ -134,7 +134,7 @@
         "title": "調査業務",
         "class": "c-business__drill",
         "desClass":"c-business__fourthdes",
-        "classHover": "c-business__opposite"
+        "classHover": " c-business__opposite"
       }
     ]
   },
@@ -184,22 +184,22 @@
       {
         "date": "2018年11月20日",
         "title":"ホームページをリニューアルしました",
-        "iconClass": "c-news__iconothers"
+        "iconClass": " c-news__iconothers"
       },
       {
         "date": "2018年07月04日",
         "title":"綿田地区の復興を願って寄付をしました。",
-        "iconClass": "c-news__iconothers"
+        "iconClass": " c-news__iconothers"
       },
       {
         "date": "2017年10月12日",
         "title":"福岡支店が移転しました。",
-        "iconClass": "c-news__iconothers"
+        "iconClass": " c-news__iconothers"
       },
       {
         "date": "2017年09月01日",
         "title":"ドローンレーザスキャナを導入しました",
-        "iconClass": "c-news__iconothers"
+        "iconClass": " c-news__iconothers"
       }
     ]
   }

@@ -6,15 +6,15 @@
     <div class="c-news__items">
         <% if (typeof news != 'undefined') { %>
             <% news.items && news.items.forEach(item => { %>
-                <a class="c-news__item">
+                <a class="c-news__item" href="#">
                     <p class="c-news__date"><%=item.date%></p>
                     <h3 class="c-news__title"><%=item.title%></h3>
-                    <span class="c-news__icon <%=item.iconClass%>">></span>
+                    <span class="c-news__icon<%=item.iconClass%>">></span>
                 </a>
             <% }) %>
         <% } %>
     </div>
-    <div class="c-news__more">
-        <p class="c-news__morebtn">お知らせ一覧 ></p>
-      </div>
+    <a class="c-news__more" href="#">
+       お知らせ一覧 >
+    </a>
 </section>

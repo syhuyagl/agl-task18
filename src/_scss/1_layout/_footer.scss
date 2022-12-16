@@ -26,6 +26,7 @@ footer
   }
   .c-footer__left {
     width: 35%;
+    z-index: 2;
     background-image: url("../../assets/img/footer-left.png");
     @include background;
     position: relative;
@@ -37,6 +38,7 @@ footer
       background-image: url("../../assets/img/footer-left-sp.png");
       height: 394px;
       background-size: contain;
+      z-index: 0;
     }
   }
   .c-footer__leftcontent {
@@ -129,6 +131,8 @@ footer
   }
   .c-footer__right {
     width: 35%;
+    z-index: 2;
+    position: relative;
     @include background;
     background-image: url("../../assets/img/footer-right.png");
     background-position-x: right;
@@ -140,6 +144,7 @@ footer
       background-image: url("../../assets/img/footer-right-sp.png");
       height: 394px;
       background-size: contain;
+      z-index: -1;
     }
   }
   .c-footer__info {

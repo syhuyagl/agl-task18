@@ -35,7 +35,7 @@ $(document).ready(function () {
       var $carousel = $(this);
       /* Initializes a slick carousel only on mobile screens */
       // slick on mobile
-      if ($(window).width() > 767) {
+      if ($(window).width() >= 768) {
         if ($carousel.hasClass("slick-initialized")) {
           $carousel.slick("unslick");
         }

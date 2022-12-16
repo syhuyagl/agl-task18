@@ -12,7 +12,7 @@
         <div class="c-business__items l-container">
             <% if (typeof survey != 'undefined') { %>
                 <% survey.items && survey.items.forEach(item => { %>
-                    <div class="c-business__item <%= item.classHover %>">
+                    <div class="c-business__item<%= item.classHover %>">
                         <div class="c-business__itembg">
                           <picture>
                             <source media="(max-width: 767px )" srcset="<%= item.srcSp %>">
@@ -45,9 +45,9 @@
               <p class="c-business__note">＊アミューズワンセルフ社製：ドローン搭載用レーザースキャナシステム「TDOT（ティードット）」</p>
             </div>
         </div>
-        <div class="c-business__detail">
-          <p>詳細情報 ></p>
-        </div>
+        <a class="c-business__detail" href="#">
+          詳細情報 >
+        </a>
     </div>
   </div>
 </section>

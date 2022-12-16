@@ -14,7 +14,7 @@
               <li class="c-header__navitem">
                 <a <% if (link.class ) { %>class="<%= link.class %>"<% } %> href="<%= link.url %>"><%= link.title %></a>
                 <% if (link.links) { %>
-                  <div class="c-header__subnav is-hover <%=link.sub%>">
+                  <div class="c-header__subnav is-hover<%=link.sub%>">
                     <% link.links.forEach(child_link => { %>
                       <div class="c-header__subnavitem">
                           <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
@@ -54,7 +54,7 @@
              <li class="c-header__navitem">
                <a <% if (link.class ) { %>class="<%= link.class %><%= link.fixedClass %>"<% } %> href="<%= link.url %>"><%= link.title %></a>
                <% if (link.links) { %>
-                 <div class="c-header__subnav is-hover <%=link.sub%>">
+                 <div class="c-header__subnav is-hover<%=link.sub%>">
                    <% link.links.forEach(child_link => { %>
                      <div class="c-header__subnavitem">
                          <a <% if (child_link.current) { %>class="is-active"<% } %> href="<%= child_link.url %>"><%= child_link.title %></a>
