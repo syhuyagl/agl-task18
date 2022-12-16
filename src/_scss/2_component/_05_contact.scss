@@ -188,6 +188,9 @@ text
       color: #cccccc;
       letter-spacing: 1.8px;
     }
+    @include sp {
+      width: 62%;
+    }
   }
 
   .c-contact__inputadjust2 {
@@ -196,6 +199,7 @@ text
   }
   .c-contact__inputtextarea {
     padding: 12px 0 14px 8px;
+    resize: none;
   }
   .c-contact__customlabel {
     max-width: 119px;

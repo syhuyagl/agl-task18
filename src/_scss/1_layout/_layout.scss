@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   position: relative;
   @include sp {
-    min-width: 350px;
+    min-width: 320px;
     -webkit-text-size-adjust: none;
   }
 }
