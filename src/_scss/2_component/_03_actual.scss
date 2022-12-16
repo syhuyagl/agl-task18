@@ -6,7 +6,7 @@ icon
 ------------------------------------------------------------*/
 .c-actual {
   .c-actual__top {
-    padding-bottom: 30px;
+    padding-bottom: 45px;
     padding-top: 49px;
     background-image: url("../../assets/img/background.jpg");
     background-position: center;
@@ -51,6 +51,7 @@ icon
     @include sp {
       margin: 29px auto 0;
       padding: 0px 75px;
+      max-width: 437px ;
     }
   }
   .slick-slide {
@@ -177,6 +178,7 @@ icon
   .c-actual__banneritem {
     position: relative;
     width: 50%;
+    cursor: pointer;
     img {
       width: 100%;
     }

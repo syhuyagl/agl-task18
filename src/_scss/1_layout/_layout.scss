@@ -1,93 +1,103 @@
 /* layout
 ------------------------------------------------------------*/
 body {
-    font-family: $main-fonts;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    position: relative;
-    @include sp {
-        min-width: 320px;
-        -webkit-text-size-adjust: none;
-    }
+  font-family: $main-fonts;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  position: relative;
+  @include sp {
+    min-width: 350px;
+    -webkit-text-size-adjust: none;
+  }
 }
 //-------------------------------------------------------
 
 .is-btab {
-    display: none;
-    @include tab {
-        display: block;
-    }
+  display: none;
+  @include tab {
+    display: block;
+  }
 }
 
-.c-logo{
-    text-align: center;
-    @include sp {
-        img{
-            width: 35px;
-        }
+.c-logo {
+  text-align: center;
+  @include sp {
+    img {
+      width: 35px;
     }
+  }
 }
-.c-top{
-    position: fixed;
-    z-index: 10;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-    &:hover{
-        opacity: 0.7;
-    }
-    @include sp {
-        display: none;
-    }
-}
-.c-top__button1{
+.c-top {
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  transition: 1s;
+  cursor: pointer;
+  @include sp {
     display: none;
+  }
 }
-.c-top__button2{
+.c-top--moveup {
+  bottom: 100%;
+  transition: 1s;
+}
+.c-top__button1 {
+  display: none;
+}
+.c-top__button2 {
+  display: none;
+}
+.is-show {
+  display: block;
+}
+.is-hidden {
+  display: none;
+}
+.is-pc {
+  display: block;
+  @include tab {
     display: none;
-}
-.is-show{
-    display: block;
-}
-.is-hidden{
-    display: none;
-}
-.is-pc{
-    display: block;
-    @include tab {
-        display: none;
-    }
-    @include sp{
-        display: none !important;
-    }
-}
-.is-sp{
-    display: none;
-    @include tab {
-        display: none;
-    }
-    @include sp {
-        display: block;
-    }
-}
-.is-sparrow{
+  }
+  @include sp {
     display: none !important;
-    @include tab {
-        display: none !important;
-    }
-    @include sp {
-        display: flex  !important;
-    }
+  }
 }
-.is-navfixed{
-    position: fixed !important;
-    background: #fff;
-    width: 100%;
-    max-width: 100% !important;
+.is-sp {
+  display: none;
+  @include tab {
+    display: none;
+  }
+  @include sp {
+    display: block;
+  }
 }
+.is-sparrow {
+  display: none !important;
+  @include tab {
+    display: none !important;
+  }
+  @include sp {
+    display: flex !important;
+  }
+}
+.is-navfixed {
+  position: fixed !important;
+  background: #fff;
+  width: 100%;
+  max-width: 100% !important;
+}
+@keyframes dropdown {
+  from {
+    bottom: 100%;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+
 //-------------------------------------------------------
 .l-container {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 //-------------------------------------------------------

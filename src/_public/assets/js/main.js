@@ -62,14 +62,14 @@ $(document).ready(function () {
       1000
     );
   });
-  $(".c-mainvisual__scroll").click(function(){
+  $(".c-mainvisual__scroll").click(function () {
     $("html, body").animate(
       {
         scrollTop: document.body.scrollHeight,
       },
       1000
     );
-  })
+  });
   $(function () {
     $(window).scroll(function () {
       if ($(window).width() > 1023) {
@@ -78,10 +78,12 @@ $(document).ready(function () {
           $(".c-header__fixedwrapper")
             .addClass("is-show")
             .removeClass("is-hidden");
+          $(".c-top").removeClass("is-hidden").removeClass("c-top--moveup");
         } else {
           $(".c-header__fixedwrapper")
             .addClass("is-hidden")
             .removeClass("is-show");
+          $(".c-top").addClass("c-top--moveup");
         }
       } else {
         $(".c-header__fixedwrapper").addClass("is-hidden");
