@@ -14,6 +14,9 @@ footer
   color: #333333;
   width: 100%;
   bottom: -10.9%;
+  @include IE {
+    bottom: -32.9%;
+  }
   @include medium {
     bottom: -7.35%;
   }

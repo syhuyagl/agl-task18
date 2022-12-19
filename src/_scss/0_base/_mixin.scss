@@ -14,6 +14,11 @@
 //============================================
 // breakpoint
 //============================================
+@mixin IE {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
 @mixin sp {
   @media only screen and (max-width: 767px) {
     @content;
@@ -30,6 +35,7 @@
     @content;
   }
 }
+
 @mixin font-heading {
   font-size: 2.4rem;
   font-weight: 600;
