@@ -63,13 +63,14 @@ text
   }
   .c-contact__formrow {
     display: flex;
-    margin-top: 35px;
+    margin-top: 37px;
     &:first-child {
       margin-top: 0;
     }
     &:nth-child(3) {
       .c-contact__inputtext {
         padding: 8px 0 9px 6px;
+        font-family: inherit;
       }
     }
     @include sp {
@@ -110,11 +111,13 @@ text
     border-width: 1px;
     border-style: solid;
     border-color: #cccccc;
+    font-family: inherit;
+    font-size: 1.2rem;
+
     &::placeholder {
-      font-size: 1.2rem;
       font-weight: 300;
       color: #cccccc;
-      letter-spacing: 1.8px;
+      letter-spacing: 1.6px;
     }
     &:focus {
       border-color: rgb(166, 138, 42);
@@ -181,6 +184,7 @@ text
       font-weight: 300;
       color: #cccccc;
       letter-spacing: 1.8px;
+      font-family: $main-fonts;
     }
     option {
       font-size: 1.2rem;
@@ -195,10 +199,10 @@ text
 
   .c-contact__inputadjust2 {
     width: 100%;
-    margin-top: 9px;
+    margin-top: 10px;
   }
   .c-contact__inputtextarea {
-    padding: 12px 0 14px 8px;
+    padding: 10px 0 5px 8px;
     resize: none;
   }
   .c-contact__customlabel {
@@ -217,8 +221,8 @@ text
     font-weight: 600;
     color: #fff;
     display: flex;
-    margin: 55px auto 0;
-    padding: 12px 92px;
+    margin: 56px auto 0;
+    padding: 8px 92px;
     letter-spacing: 1.3px;
     position: relative;
     z-index: 100;

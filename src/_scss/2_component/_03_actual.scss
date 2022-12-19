@@ -76,6 +76,9 @@ icon
     top: 63.8%;
     left: 5%;
     display: flex;
+    max-width: 366px;
+    left: 50%;
+    transform: translateX(-50%);
     justify-content: space-between;
   }
   .c-actual__item {
