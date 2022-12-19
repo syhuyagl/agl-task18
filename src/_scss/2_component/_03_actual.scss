@@ -31,7 +31,7 @@ icon
     @include font-sub;
     max-width: 532px;
     margin: 0 auto;
-    padding-top: 18px;
+    padding-top: 16px;
     letter-spacing: 0.5px;
     line-height: 2;
     @include sp {
@@ -47,7 +47,7 @@ icon
   .c-actual__items {
     display: flex;
     padding: 0 15px;
-    margin: 35px auto 0;
+    margin: 37px auto 0;
     justify-content: space-between;
     @include sp {
       margin: 29px auto 0;
@@ -214,7 +214,7 @@ icon
   .c-actual__bannertitle {
     font-size: 3rem;
     font-weight: 600;
-    letter-spacing: 4px;
+    letter-spacing: 2.4px;
     @include sp {
       font-size: 1.6rem;
       padding-top: 4px;

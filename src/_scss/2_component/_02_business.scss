@@ -207,9 +207,9 @@ title
   }
   .c-business__tsunami {
     background: #d05e48;
-    padding: 19px 0;
+    padding: 21px 0 17px;
     text-align: center;
-    bottom: 2.4%;
+    bottom: 2.9%;
     @include sp {
       background: #d05e48;
       padding: 14px 0 9px;
@@ -222,9 +222,9 @@ title
   }
   .c-business__drone {
     background: #48b7d0;
-    padding: 20px 0 18px;
+    padding: 20px 0 16px;
     text-align: center;
-    bottom: 2.4%;
+    bottom: 2.9%;
     @include sp {
       padding: 15px 0 11px;
       text-align: center;
@@ -237,9 +237,9 @@ title
   }
   .c-business__camera {
     background: #a68a2a;
-    padding: 19px 0;
+    padding: 19px 0 18px;
     text-align: center;
-    bottom: 2.4%;
+    bottom: 2.7%;
     @include sp {
       height: 86px;
       padding: 14px 0;
@@ -251,9 +251,9 @@ title
   }
   .c-business__drill {
     background: #40a62a;
-    padding: 19px 0;
+    padding: 19px 0 17px;
     text-align: center;
-    bottom: 2.4%;
+    bottom: 3%;
     @include sp {
       height: 86px;
       padding: 13px 0;
@@ -326,11 +326,17 @@ title
       bottom: 8.7%;
       transform: translateX(-50%);
     }
+    @include medium{
+      justify-content: space-between;
+    }
     @include tab {
       flex-direction: column;
       height: 624px;
+      justify-content: initial;
+
     }
     @include sp {
+      justify-content: initial;
       margin-top: 50px;
       background-image: url("../../assets/img/bg-forest-sp.jpg");
       height: 554px;
@@ -357,8 +363,10 @@ title
     @include medium {
       width: 60%;
       animation: none;
-      margin-top: 30px;
+      margin-top: 65px;
+      padding-left: 0px;
       margin-right: 0px;
+      max-width: 713px;
       img {
         position: relative;
         align-self: center;
@@ -386,7 +394,7 @@ title
     @include medium {
       transform: translateX(-28px);
       color: #fff;
-      padding-top: 27px;
+      padding-top: 56px;
     }
     @include tab {
       width: 100%;

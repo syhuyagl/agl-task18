@@ -13,9 +13,9 @@ footer
   position: absolute;
   color: #333333;
   width: 100%;
-  bottom: -10.85%;
+  bottom: -10.9%;
   @include medium {
-    bottom: -6.75%;
+    bottom: -7.35%;
   }
   @include tab {
     position: static;
@@ -44,7 +44,7 @@ footer
   .c-footer__leftcontent {
     position: absolute;
     color: #fff;
-    bottom: 8.7%;
+    bottom: 8.9%;
     left: 20%;
     @include medium {
       position: absolute;
@@ -127,6 +127,8 @@ footer
       font-size: 1.2rem;
       letter-spacing: 1.8px;
       margin-left: 4px;
+      padding-top: 4px;
+      padding-bottom: 2px;
     }
   }
   .c-footer__right {
@@ -174,7 +176,7 @@ footer
       }
     }
     @include sp {
-      padding-top: 21px;
+      padding-top: 20px;
     }
   }
   .c-footer__company {
@@ -279,6 +281,7 @@ footer
     font-family: KozGoPro;
     font-size: 1.4rem;
     padding-top: 12px;
+    max-width: 379px;
     @include sp {
       padding-top: 22px;
       text-shadow: #eee 0px 0px 3px;
@@ -321,7 +324,7 @@ footer
     font-weight: 300;
     @include medium {
       padding-top: 8px;
-      padding-bottom: 10px;
+      padding-bottom: 27px;
     }
     @include sp {
       font-size: 1rem;

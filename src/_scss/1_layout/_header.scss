@@ -30,6 +30,12 @@
     margin-left: 20px;
     @include medium {
       min-height: 47px;
+      display: inline-flex;
+      -webkit-align-self: center;
+      a {
+        display: inline-flex;
+        -webkit-align-self: center;
+      }
     }
     @include tab {
       width: 273px;
@@ -85,6 +91,7 @@
   .c-header__navitems {
     display: flex;
     width: 710px;
+    justify-content: space-between;
   }
   .c-header__navitem {
     font-size: 1.6rem;

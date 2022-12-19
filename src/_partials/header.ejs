@@ -50,7 +50,7 @@
      <nav class="c-gnav is-pc">
        <ul class="c-header__navitems">
          <% if (typeof linklists != 'undefined') { %>
-           <% linklists.main && linklists.main.forEach(link => { %>
+           <% linklists.main && linklists.main.forEach((link) => { %>
              <li class="c-header__navitem">
                <a <% if (link.class ) { %>class="<%= link.class %><%= link.fixedClass %>"<% } %> href="<%= link.url %>"><%= link.title %></a>
                <% if (link.links) { %>
