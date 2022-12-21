@@ -49,11 +49,6 @@ btn
       @include sp {
         width: 5px;
         height: 5px;
-        position: absolute;
-        border-radius: 50%;
-        background: #fff;
-        left: 50%;
-        bottom: 61.1%;
       }
     }
     @include sp {
@@ -61,7 +56,6 @@ btn
       height: 24px;
       border: 1px solid #fff;
       border-radius: 8px;
-      left: 50%;
       bottom: 30.5%;
     }
   }
@@ -177,7 +171,7 @@ btn
   .c-mainvisual__arrow:last-child {
     margin-left: 6px;
     @include sp {
-      margin-left: 3px;
+      margin-left: 5px;
     }
   }
   .c-mainvisual__date {
@@ -282,8 +276,6 @@ btn
     font-family: "Lora", serif;
     line-height: 1.45;
     font-weight: 400;
-    @include tab {
-    }
     @include sp {
       font-size: 5rem;
       letter-spacing: 4.7px;
@@ -328,7 +320,6 @@ btn
     @include sp {
       font-size: 4.5rem;
       letter-spacing: 4.5px;
-      text-align: center;
     }
   }
   .c-mainvisual__small {
@@ -381,7 +372,6 @@ btn
       min-width: 0;
     }
     @include sp {
-      width: 84.4%;
       top: 24.3%;
       max-width: 317px;
       min-width: 0;

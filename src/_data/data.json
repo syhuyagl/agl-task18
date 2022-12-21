@@ -3,61 +3,61 @@
     "main": [
       {
         "title": "会社案内",
-        "url": "/#!",
+        "url": "#",
         "class": "c-header__item"
       },
       {
         "title": "事業紹介",
-        "url": "/#!",
+        "url": "#",
         "class": "c-header__item c-header__item2",
 
         "links": [
           {
             "title": "防災・減災業務",
-            "url": "/#!"
+            "url": "#"
           },
           {
             "title": "ICT・BIM/CIM",
-            "url": "/#!"
+            "url": "#"
           },
           {
             "title": "測量・設計業務",
-            "url": "/#!"
+            "url": "#"
           },
           {
             "title": "調査業務",
-            "url": "/#!"
+            "url": "#"
           }
         ]
       },
       {
         "title": "実績紹介",
-        "url": "/#!",
+        "url": "#",
         "class": "c-header__item c-header__item3"
       },
       {
         "title": "技術資料",
-        "url": "/#!",
+        "url": "#",
         "class": "c-header__item"
       },
       {
         "title": "採用情報",
-        "url": "/#!",
+        "url": "#",
         "sub": " c-header__subnav2",
         "class": "c-header__info",
         "fixedClass": " c-header__infofixed",
         "links": [
           {
             "title": "私たちの仕事",
-            "url": "/#!"
+            "url": "#"
           },
           {
             "title": "先輩社員の声",
-            "url": "/#!"
+            "url": "#"
           },
           {
             "title": "募集要項",
-            "url": "/#!"
+            "url": "#"
           }
         ]
       },

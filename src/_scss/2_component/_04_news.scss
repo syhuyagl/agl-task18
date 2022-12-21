@@ -23,6 +23,8 @@ form
     flex-direction: column;
     max-width: 605px;
     margin: 7px auto 0;
+    z-index: 1;
+    position: relative;
     @include sp {
       padding: 0 10px;
     }

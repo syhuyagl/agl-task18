@@ -21,8 +21,6 @@
     }
     @include sp {
       padding: 8px 0px;
-      min-width: 0;
-      max-width: 100%;
     }
   }
   .c-header__logo {
@@ -59,7 +57,7 @@
     font-size: 1.6rem;
     background: #1c2633;
     font-weight: 300;
-    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 53%);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.53);
     color: #fff;
     bottom: 0;
     transform: translate(-50%, 112%);
@@ -192,13 +190,12 @@
     @include sp {
       margin-top: 45px;
       height: -webkit-calc(100% - 45px);
-      overflow-y: auto;
-      overflow-x: hidden;
     }
   }
   .c-header__menuinfo {
     text-align: center;
     padding-top: 21px;
+    border-top: 1px dashed #cccccc;
   }
   .c-header__addressdetail {
     letter-spacing: 1px;
@@ -246,7 +243,9 @@
     display: block;
     &:first-child {
       border: none;
-      padding: 14px 10px 14px 26px;
+      border-top: 1px dashed #cccccc;
+      padding: 14px 10px 14px 20px;
+      border-bottom: 1px dashed #cccccc;
     }
     &:nth-child(8) {
       color: #fff;

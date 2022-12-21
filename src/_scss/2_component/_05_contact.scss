@@ -49,7 +49,6 @@ text
     }
   }
   .c-contact__form {
-    max-width: 600px;
     margin: 68px auto 0;
     padding: 0 15px;
   }
@@ -129,6 +128,9 @@ text
   .c-contact__inputadjust {
     width: 30.4%;
     display: flex;
+    @include sp {
+      width: 35.4%;
+    }
   }
   .c-contact__labelnameadjust {
     font-weight: 300;

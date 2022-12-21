@@ -42,6 +42,7 @@ title
       max-width: 348px;
       padding: 0 7px;
       width: 100%;
+      min-width: 326px;
       margin: 16px auto 0;
     }
   }
@@ -326,14 +327,13 @@ title
       bottom: 8.7%;
       transform: translateX(-50%);
     }
-    @include medium{
+    @include medium {
       justify-content: space-between;
     }
     @include tab {
       flex-direction: column;
       height: 624px;
       justify-content: initial;
-
     }
     @include sp {
       justify-content: initial;

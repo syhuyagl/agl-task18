@@ -14,9 +14,7 @@ footer
   color: #333333;
   width: 100%;
   bottom: -10.9%;
-  @include IE {
-    bottom: -32.9%;
-  }
+
   @include medium {
     bottom: -7.35%;
   }
@@ -268,6 +266,12 @@ footer
     font-weight: 400;
     padding-top: 2px;
     letter-spacing: 1.5px;
+    a{
+      &:hover{
+        opacity: 1;
+        cursor:  default;
+      }
+    }
     @include medium {
       padding-top: 5px;
     }
