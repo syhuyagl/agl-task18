@@ -98,7 +98,6 @@ form
     @include sp {
       font-size: 1.2rem;
       width: 100%;
-      letter-spacing: 1px;
       padding-left: 0px;
       padding-top: 12px;
     }
@@ -149,17 +148,18 @@ form
     color: #333333;
     text-align: center;
     letter-spacing: 0.2px;
-    margin-top: 30px;
     background: #d3d3d3;
     padding: 25px 0 23px;
     display: inherit;
     z-index: 1;
     cursor: pointer;
     position: relative;
+    margin: 30px auto;
     @include sp {
       margin-top: 19px;
       font-size: 1.4rem;
       padding: 16px 0;
+      margin-bottom: 0;
     }
   }
   .c-news__morebtn {

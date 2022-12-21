@@ -31,6 +31,7 @@ footer
     background-image: url("../../assets/img/footer-left.png");
     @include background;
     position: relative;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
     @include tab {
       height: 247px;
       background-size: contain;
@@ -139,6 +140,7 @@ footer
     @include background;
     background-image: url("../../assets/img/footer-right.png");
     background-position-x: right;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     @include tab {
       height: 247px;
       background-size: contain;
@@ -146,7 +148,6 @@ footer
     @include sp {
       background-image: url("../../assets/img/footer-right-sp.png");
       height: 394px;
-      background-size: contain;
       z-index: -1;
     }
   }

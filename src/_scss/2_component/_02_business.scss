@@ -41,8 +41,6 @@ title
     @include sp {
       max-width: 348px;
       padding: 0 7px;
-      width: 100%;
-      min-width: 326px;
       margin: 16px auto 0;
     }
   }
@@ -203,7 +201,8 @@ title
     font-weight: 600;
     @include sp {
       font-size: 1.4rem;
-      width: 81.3%;
+      width: 128px;
+      max-width: 90%;
     }
   }
   .c-business__tsunami {
@@ -286,7 +285,6 @@ title
     letter-spacing: 2px;
     @include sp {
       padding-top: 10px;
-      letter-spacing: 2px;
     }
   }
   .c-business__fourthdes {
@@ -336,7 +334,6 @@ title
       justify-content: initial;
     }
     @include sp {
-      justify-content: initial;
       margin-top: 50px;
       background-image: url("../../assets/img/bg-forest-sp.jpg");
       height: 554px;
